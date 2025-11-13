@@ -53,9 +53,6 @@ namespace NebuloHub.Application.UseCase
             }).ToList();
         }
 
-        /// <summary>
-        /// Retorna os Usuario paginados.
-        /// </summary>
         public async Task<List<CreateUsuarioResponse>> GetAllPagedAsync(int page, int pageSize)
         {
             var usuario = await _repository.GetAllAsync();
@@ -119,6 +116,16 @@ namespace NebuloHub.Application.UseCase
             _repository.Delete(usuario);
             await _repository.SaveChangesAsync();
             return true;
+        }
+
+        // Método de login
+        public async Task<Usuario?> LoginAsync(string email, string senha)
+        {
+            // Busca o usuário por e-mail e senha
+            var usuarios = await _repository.GetAllAsync();
+            var usuario = usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
+
+            return usuario;
         }
     }
 }
