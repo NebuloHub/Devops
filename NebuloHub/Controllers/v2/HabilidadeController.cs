@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NebuloHub.Application.DTOs.Request;
 using NebuloHub.Application.DTOs.Response;
@@ -30,6 +31,7 @@ namespace NebuloHub.Controllers.v2
         /// <param name="page">Número da página (default = 1)</param>
         /// <param name="pageSize">Quantidade de itens por página (default = 10)</param>
         [HttpGet]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(IEnumerable<CreateHabilidadeResponse>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetHabilidade([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
@@ -60,6 +62,7 @@ namespace NebuloHub.Controllers.v2
         /// </summary>
         /// <param name="id">ID do registro</param>
         [HttpGet("{id}")]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(CreateHabilidadeResponse), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> GetHabilidadeById(long id)
@@ -77,6 +80,7 @@ namespace NebuloHub.Controllers.v2
         /// </summary>
         /// <param name="request">Payload para criação</param>
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         [ProducesResponseType(typeof(CreateHabilidadeResponse), (int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> PostHabilidade([FromBody] CreateHabilidadeRequest request)
@@ -93,6 +97,7 @@ namespace NebuloHub.Controllers.v2
         /// <param name="id">ID do registro</param>
         /// <param name="request">Payload para atualização</param>
         [HttpPut("{id}")]
+        [Authorize(Roles = "ADMIN")]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
@@ -110,6 +115,7 @@ namespace NebuloHub.Controllers.v2
         /// </summary>
         /// <param name="id">ID do registro</param>
         [HttpDelete("{id}")]
+        [Authorize(Roles = "ADMIN")]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> DeleteHabilidade(long id)

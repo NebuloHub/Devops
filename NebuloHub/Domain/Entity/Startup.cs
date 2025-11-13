@@ -18,8 +18,10 @@ namespace NebuloHub.Domain.Entity
         public string UsuarioCPF { get; set; }
         public virtual Usuario Usuario { get; set; }
 
+        public virtual ICollection<Possui> Possuis { get; private set; } = new List<Possui>();
 
-        private Startup(string cnpj, string video, string nomeStartup, string site, string descricao, string nomeResponsavel, string emailStartup, string usuarioCpf )
+
+        private Startup(string cnpj, string? video, string nomeStartup, string? site, string descricao, string? nomeResponsavel, string emailStartup, string usuarioCpf )
         {
             CNPJ = cnpj;
             Video = video;
@@ -31,7 +33,7 @@ namespace NebuloHub.Domain.Entity
             UsuarioCPF = usuarioCpf;
         }
 
-        public void Atualizar(string cnpj, string video, string nomeStartup, string site, string descricao, string nomeResponsavel, string emailStartup, string usuarioCpf)
+        public void Atualizar(string cnpj, string? video, string nomeStartup, string? site, string descricao, string? nomeResponsavel, string emailStartup, string usuarioCpf)
         {
             CNPJ = cnpj;
             Video = video;
@@ -44,7 +46,7 @@ namespace NebuloHub.Domain.Entity
         }
 
 
-        internal static Startup Create(string cnpj, string video, string nomeStartup, string site, string descricao, string nomeResponsavel, string emailStartup, string usuarioCpf)
+        internal static Startup Create(string cnpj, string? video, string nomeStartup, string? site, string descricao, string? nomeResponsavel, string emailStartup, string usuarioCpf)
         {
             return new Startup(cnpj, video, nomeStartup, site, descricao, nomeResponsavel, emailStartup, usuarioCpf);
         }

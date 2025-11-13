@@ -3,6 +3,98 @@
   "WorkspaceRootPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\repositores\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\repositores\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\usecase\\possuiusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\possuiusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\usecase\\startupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\startupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\controllers\\v2\\possuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\controllers\\v2\\possuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\repositores\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\repositores\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\mapping\\habilidademapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\mapping\\habilidademapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\domain\\entity\\habilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\domain\\entity\\habilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\controllers\\v2\\habilidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\controllers\\v2\\habilidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\domain\\entity\\possui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\domain\\entity\\possui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\usecase\\habilidadeusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\habilidadeusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\response\\createhabilidaderesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\response\\createhabilidaderesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\request\\createhabilidaderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\request\\createhabilidaderequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\mapping\\possuimapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\mapping\\possuimapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\domain\\entity\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\domain\\entity\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\mapping\\startupmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\mapping\\startupmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\request\\createpossuirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\request\\createpossuirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\response\\createpossuiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\response\\createpossuiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\response\\createstartupresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\response\\createstartupresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\request\\createstartuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\request\\createstartuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\controllers\\v2\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\controllers\\v2\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\controllers\\v2\\startupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\controllers\\v2\\startupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\controllers\\v2\\avaliacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\controllers\\v2\\avaliacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\controllers\\v2\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\controllers\\v2\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,124 +103,32 @@
       "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\controllers\\v1\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\controllers\\v2\\analisestartupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\controllers\\v2\\analisestartupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\repositores\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\repositores\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\repositores\\startupprocedurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\repositores\\startupprocedurerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\mapping\\usuariomapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\mapping\\usuariomapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\usecase\\usuariousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\usuariousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\controllers\\v1\\habilidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\controllers\\v1\\habilidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\domain\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\domain\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\response\\createusuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\response\\createusuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\request\\createusuariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\request\\createusuariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\domain\\entity\\habilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\domain\\entity\\habilidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\domain\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\domain\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\usecase\\analisestartupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\analisestartupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\domain\\entity\\avaliacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\domain\\entity\\avaliacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\response\\analisarstartupresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\response\\analisarstartupresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\request\\analisarstartuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\request\\analisarstartuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\usecase\\avaliacaousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\avaliacaousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\repositores\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\repositores\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\usecase\\startupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\startupusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\usecase\\possuiusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\possuiusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\request\\createstartuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\request\\createstartuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\response\\createpossuiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\response\\createpossuiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\domain\\entity\\possui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\domain\\entity\\possui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\dtos\\request\\createpossuirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\dtos\\request\\createpossuirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\usecase\\habilidadeusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\habilidadeusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\infraestructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\infraestructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\validators\\createusuariorequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\validators\\createusuariorequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\validators\\createstartuprequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\validators\\createstartuprequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\validators\\createhabilidaderequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\validators\\createhabilidaderequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\validators\\createpossuirequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\validators\\createpossuirequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\application\\validators\\createavaliacaorequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\validators\\createavaliacaorequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\documents\\luiz\\.net\\nebulohub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,244 +138,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 276,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\AuthController.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v2\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\AuthController.cs",
-              "RelativeToolTip": "NebuloHub\\Controllers\\v2\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T15:57:34.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AnaliseStartupController.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\AnaliseStartupController.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v2\\AnaliseStartupController.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\AnaliseStartupController.cs",
-              "RelativeToolTip": "NebuloHub\\Controllers\\v2\\AnaliseStartupController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T15:53:57.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "StartupProcedureRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Repositores\\StartupProcedureRepository.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Infraestructure\\Repositores\\StartupProcedureRepository.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Repositores\\StartupProcedureRepository.cs",
-              "RelativeToolTip": "NebuloHub\\Infraestructure\\Repositores\\StartupProcedureRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Title": "HabilidadeMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Mapping\\HabilidadeMapping.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Infraestructure\\Mapping\\HabilidadeMapping.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Mapping\\HabilidadeMapping.cs",
+              "RelativeToolTip": "NebuloHub\\Infraestructure\\Mapping\\HabilidadeMapping.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:42:04.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HabilidadeController.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v1\\HabilidadeController.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v1\\HabilidadeController.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v1\\HabilidadeController.cs",
-              "RelativeToolTip": "NebuloHub\\Controllers\\v1\\HabilidadeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwFYAAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T15:09:01.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v1\\AuthController.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v1\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v1\\AuthController.cs",
-              "RelativeToolTip": "NebuloHub\\Controllers\\v1\\AuthController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAUwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T15:15:47.38Z",
+              "WhenOpened": "2025-11-13T20:04:30.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Program.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Program.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Program.cs",
-              "RelativeToolTip": "NebuloHub\\Program.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAwwGUAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:42:42.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsuarioUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\UsuarioUseCase.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\UsuarioUseCase.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\UsuarioUseCase.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\UsuarioUseCase.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAmwHsAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.616Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Repositores\\Repository.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Infraestructure\\Repositores\\Repository.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Repositores\\Repository.cs",
-              "RelativeToolTip": "NebuloHub\\Infraestructure\\Repositores\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:40:17.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateUsuarioRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateUsuarioRequest.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Request\\CreateUsuarioRequest.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateUsuarioRequest.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Request\\CreateUsuarioRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T15:18:58.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Usuario.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Domain\\Entity\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Usuario.cs",
-              "RelativeToolTip": "NebuloHub\\Domain\\Entity\\Usuario.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA2wDEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AnaliseStartupUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\AnaliseStartupUseCase.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\AnaliseStartupUseCase.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\AnaliseStartupUseCase.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\AnaliseStartupUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:59:21.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AnalisarStartupResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\AnalisarStartupResponse.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Response\\AnalisarStartupResponse.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\AnalisarStartupResponse.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Response\\AnalisarStartupResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T15:00:25.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Habilidade.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Habilidade.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Domain\\Entity\\Habilidade.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Habilidade.cs",
-              "RelativeToolTip": "NebuloHub\\Domain\\Entity\\Habilidade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AnalisarStartupRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\AnalisarStartupRequest.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Request\\AnalisarStartupRequest.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\AnalisarStartupRequest.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Request\\AnalisarStartupRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:59:52.368Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Avaliacao.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Avaliacao.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Domain\\Entity\\Avaliacao.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Avaliacao.cs",
-              "RelativeToolTip": "NebuloHub\\Domain\\Entity\\Avaliacao.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAswBUAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.726Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AvaliacaoUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\AvaliacaoUseCase.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\AvaliacaoUseCase.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\AvaliacaoUseCase.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\AvaliacaoUseCase.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAqwHQAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\appsettings.json",
-              "RelativeDocumentMoniker": "NebuloHub\\appsettings.json",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\appsettings.json",
-              "RelativeToolTip": "NebuloHub\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-13T14:34:57.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "StartupUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\StartupUseCase.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\StartupUseCase.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\StartupUseCase.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\StartupUseCase.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwHgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PossuiUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\PossuiUseCase.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\PossuiUseCase.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\PossuiUseCase.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\PossuiUseCase.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAG8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.586Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Repositores\\IRepository.cs",
               "RelativeDocumentMoniker": "NebuloHub\\Infraestructure\\Repositores\\IRepository.cs",
@@ -383,151 +163,398 @@
               "RelativeToolTip": "NebuloHub\\Infraestructure\\Repositores\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.633Z"
+              "WhenOpened": "2025-11-13T18:52:01.551Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CreateStartupRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateStartupRequest.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Request\\CreateStartupRequest.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateStartupRequest.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Request\\CreateStartupRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Repositores\\Repository.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Infraestructure\\Repositores\\Repository.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Repositores\\Repository.cs",
+              "RelativeToolTip": "NebuloHub\\Infraestructure\\Repositores\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.556Z"
+              "WhenOpened": "2025-11-13T18:52:10.598Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CreatePossuiResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreatePossuiResponse.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Response\\CreatePossuiResponse.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreatePossuiResponse.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Response\\CreatePossuiResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "PossuiController.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\PossuiController.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v2\\PossuiController.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\PossuiController.cs",
+              "RelativeToolTip": "NebuloHub\\Controllers\\v2\\PossuiController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwD0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.65Z"
+              "WhenOpened": "2025-11-13T19:15:32.079Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Possui.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Possui.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Domain\\Entity\\Possui.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Possui.cs",
-              "RelativeToolTip": "NebuloHub\\Domain\\Entity\\Possui.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "StartupUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\StartupUseCase.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\StartupUseCase.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\StartupUseCase.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\StartupUseCase.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAmwIYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.682Z"
+              "WhenOpened": "2025-11-13T19:09:36.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CreatePossuiRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreatePossuiRequest.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Request\\CreatePossuiRequest.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreatePossuiRequest.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Request\\CreatePossuiRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PossuiUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\PossuiUseCase.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\PossuiUseCase.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\PossuiUseCase.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\PossuiUseCase.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAqwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.712Z"
+              "WhenOpened": "2025-11-13T19:46:46.822Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "HabilidadeUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\HabilidadeUseCase.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\HabilidadeUseCase.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\HabilidadeUseCase.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\HabilidadeUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Services\\TokenService.cs",
-              "RelativeToolTip": "NebuloHub\\Services\\TokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 6,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "NebuloHub\\Infraestructure\\Context\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Context\\AppDbContext.cs",
               "RelativeToolTip": "NebuloHub\\Infraestructure\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.802Z"
+              "WhenOpened": "2025-11-13T18:35:04.909Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CreateUsuarioRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreateUsuarioRequestValidator.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\Validators\\CreateUsuarioRequestValidator.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreateUsuarioRequestValidator.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\Validators\\CreateUsuarioRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Habilidade.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Habilidade.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Domain\\Entity\\Habilidade.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Habilidade.cs",
+              "RelativeToolTip": "NebuloHub\\Domain\\Entity\\Habilidade.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswCcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.822Z"
+              "WhenOpened": "2025-11-13T20:00:33.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HabilidadeController.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\HabilidadeController.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v2\\HabilidadeController.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\HabilidadeController.cs",
+              "RelativeToolTip": "NebuloHub\\Controllers\\v2\\HabilidadeController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAowEAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:11:00.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Possui.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Possui.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Domain\\Entity\\Possui.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Possui.cs",
+              "RelativeToolTip": "NebuloHub\\Domain\\Entity\\Possui.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:48:11.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HabilidadeUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\HabilidadeUseCase.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\HabilidadeUseCase.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\HabilidadeUseCase.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\HabilidadeUseCase.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:14:21.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateHabilidadeResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreateHabilidadeResponse.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Response\\CreateHabilidadeResponse.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreateHabilidadeResponse.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Response\\CreateHabilidadeResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:05:01.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateHabilidadeRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateHabilidadeRequest.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Request\\CreateHabilidadeRequest.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateHabilidadeRequest.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Request\\CreateHabilidadeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T20:04:56.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PossuiMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Mapping\\PossuiMapping.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Infraestructure\\Mapping\\PossuiMapping.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Mapping\\PossuiMapping.cs",
+              "RelativeToolTip": "NebuloHub\\Infraestructure\\Mapping\\PossuiMapping.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwBgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:47:05.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreatePossuiRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreatePossuiRequest.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Request\\CreatePossuiRequest.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreatePossuiRequest.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Request\\CreatePossuiRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:46:35.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StartupMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Mapping\\StartupMapping.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Infraestructure\\Mapping\\StartupMapping.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Mapping\\StartupMapping.cs",
+              "RelativeToolTip": "NebuloHub\\Infraestructure\\Mapping\\StartupMapping.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:11:51.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Startup.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Domain\\Entity\\Startup.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Startup.cs",
+              "RelativeToolTip": "NebuloHub\\Domain\\Entity\\Startup.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:12:01.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreatePossuiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreatePossuiResponse.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Response\\CreatePossuiResponse.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreatePossuiResponse.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Response\\CreatePossuiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:46:41.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v2\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\UsuarioController.cs",
+              "RelativeToolTip": "NebuloHub\\Controllers\\v2\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:19:56.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CreateStartupRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateStartupRequest.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Request\\CreateStartupRequest.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateStartupRequest.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Request\\CreateStartupRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:12:46.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CreateStartupResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreateStartupResponse.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Response\\CreateStartupResponse.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreateStartupResponse.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Response\\CreateStartupResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:13:03.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StartupController.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\StartupController.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v2\\StartupController.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\StartupController.cs",
+              "RelativeToolTip": "NebuloHub\\Controllers\\v2\\StartupController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:11:12.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AvaliacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\AvaliacaoController.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v2\\AvaliacaoController.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\AvaliacaoController.cs",
+              "RelativeToolTip": "NebuloHub\\Controllers\\v2\\AvaliacaoController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowD8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:29:59.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\AuthController.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v2\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v2\\AuthController.cs",
+              "RelativeToolTip": "NebuloHub\\Controllers\\v2\\AuthController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T19:28:22.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v1\\AuthController.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Controllers\\v1\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Controllers\\v1\\AuthController.cs",
+              "RelativeToolTip": "NebuloHub\\Controllers\\v1\\AuthController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAADMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:38:52.141Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "CreateStartupRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreateStartupRequestValidator.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\Validators\\CreateStartupRequestValidator.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreateStartupRequestValidator.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\Validators\\CreateStartupRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "CreateUsuarioRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateUsuarioRequest.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Request\\CreateUsuarioRequest.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Request\\CreateUsuarioRequest.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Request\\CreateUsuarioRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CreatePossuiRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreatePossuiRequestValidator.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\Validators\\CreatePossuiRequestValidator.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreatePossuiRequestValidator.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\Validators\\CreatePossuiRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.857Z"
+              "WhenOpened": "2025-11-13T18:57:31.413Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "CreateHabilidadeRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreateHabilidadeRequestValidator.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\Validators\\CreateHabilidadeRequestValidator.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreateHabilidadeRequestValidator.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\Validators\\CreateHabilidadeRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Usuario.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Domain\\Entity\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Domain\\Entity\\Usuario.cs",
+              "RelativeToolTip": "NebuloHub\\Domain\\Entity\\Usuario.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwCoAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.875Z"
+              "WhenOpened": "2025-11-13T18:50:42.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UsuarioUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\UsuarioUseCase.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\UsuarioUseCase.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\UsuarioUseCase.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\UsuarioUseCase.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAqwHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:38:30.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UsuarioMapping.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Mapping\\UsuarioMapping.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Infraestructure\\Mapping\\UsuarioMapping.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Infraestructure\\Mapping\\UsuarioMapping.cs",
+              "RelativeToolTip": "NebuloHub\\Infraestructure\\Mapping\\UsuarioMapping.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:46:00.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CreateUsuarioResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreateUsuarioResponse.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\DTOs\\Response\\CreateUsuarioResponse.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\DTOs\\Response\\CreateUsuarioResponse.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\DTOs\\Response\\CreateUsuarioResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:57:39.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AnaliseStartupUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\AnaliseStartupUseCase.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\AnaliseStartupUseCase.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\UseCase\\AnaliseStartupUseCase.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\AnaliseStartupUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T18:38:24.015Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "CreateAvaliacaoRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreateAvaliacaoRequestValidator.cs",
-              "RelativeDocumentMoniker": "NebuloHub\\Application\\Validators\\CreateAvaliacaoRequestValidator.cs",
-              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Application\\Validators\\CreateAvaliacaoRequestValidator.cs",
-              "RelativeToolTip": "NebuloHub\\Application\\Validators\\CreateAvaliacaoRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Program.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Program.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\Program.cs",
+              "RelativeToolTip": "NebuloHub\\Program.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAiwLoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T14:34:57.893Z"
+              "WhenOpened": "2025-11-13T18:35:14.797Z",
+              "EditorCaption": ""
             }
           ]
         }

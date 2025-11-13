@@ -12,7 +12,7 @@ namespace NebuloHub.Domain.Entity
         public string TipoHabilidade { get; set; }
 
 
-        public virtual Possui Possui { get; set; }
+        public virtual ICollection<Possui> Possuis { get; private set; } = new List<Possui>();
 
 
         private Habilidade(string nomeHabilidade, string tipoHabilidade)

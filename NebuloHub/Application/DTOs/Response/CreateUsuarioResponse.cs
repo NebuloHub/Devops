@@ -12,6 +12,6 @@ namespace NebuloHub.Application.DTOs.Response
 
         [EnumDataType(typeof(Role))]
         public Role Role { get; set; }
-        public string Telefone { get; set; }
+        public long? Telefone { get; set; }
     }
 }

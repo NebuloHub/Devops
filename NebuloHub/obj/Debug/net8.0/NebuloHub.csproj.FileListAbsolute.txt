@@ -749,10 +749,10 @@ C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\staticweb
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\swae.build.ex.cache
-C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\NebuloHub.csproj.Up2Date
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\NebuloHub.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\refint\NebuloHub.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\NebuloHub.pdb
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\NebuloHub.genruntimeconfig.cache
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\ref\NebuloHub.dll
+C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

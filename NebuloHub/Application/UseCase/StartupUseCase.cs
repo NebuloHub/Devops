@@ -60,8 +60,8 @@ namespace NebuloHub.Application.UseCase
                 .Select(u => new CreateStartupResponse
                 {
                     CNPJ = u.CNPJ,
-                    Video = u.Video,
                     NomeStartup = u.NomeStartup,
+                    EmailStartup = u.EmailStartup,
                     Site = u.Site
                 })
                 .ToList();
