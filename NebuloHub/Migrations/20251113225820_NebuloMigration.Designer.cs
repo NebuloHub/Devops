@@ -12,7 +12,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace NebuloHub.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251113200213_NebuloMigration")]
+    [Migration("20251113225820_NebuloMigration")]
     partial class NebuloMigration
     {
         /// <inheritdoc />

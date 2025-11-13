@@ -74,7 +74,8 @@ namespace NebuloHub.Application.UseCase
                     NomeStartup = possui.Startup.NomeStartup,
                     Site = possui.Startup.Site,
                     Descricao = possui.Startup.Descricao,
-                    NomeResponsavel = possui.Startup.NomeResponsavel
+                    NomeResponsavel = possui.Startup.NomeResponsavel,
+                    EmailStartup = possui.Startup.EmailStartup
                 },
                 Habilidade = possui.Habilidade == null ? null : new CreateHabilidadeResponse
                 {
