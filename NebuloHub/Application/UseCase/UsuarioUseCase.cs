@@ -1,6 +1,8 @@
-﻿using NebuloHub.Application.DTOs.Request;
+﻿using Microsoft.EntityFrameworkCore;
+using NebuloHub.Application.DTOs.Request;
 using NebuloHub.Application.DTOs.Response;
 using NebuloHub.Domain.Entity;
+using NebuloHub.Infraestructure.Context;
 using NebuloHub.Infraestructure.Repositores;
 
 namespace NebuloHub.Application.UseCase
@@ -8,10 +10,12 @@ namespace NebuloHub.Application.UseCase
     public class UsuarioUseCase
     {
         private readonly IRepository<Usuario> _repository;
+        private readonly AppDbContext _context;
 
-        public UsuarioUseCase(IRepository<Usuario> repository)
+        public UsuarioUseCase(IRepository<Usuario> repository, AppDbContext context)
         {
             _repository = repository;
+            _context = context;
         }
 
         public async Task<CreateUsuarioResponse> CreateUsuarioAsync(CreateUsuarioRequest request)
@@ -39,20 +43,6 @@ namespace NebuloHub.Application.UseCase
             };
         }
 
-        public async Task<List<CreateUsuarioResponse>> GetAllUsuarioAsync()
-        {
-            var usuario = await _repository.GetAllAsync();
-            return usuario.Select(u => new CreateUsuarioResponse
-            {
-                CPF = u.CPF,
-                Nome = u.Nome,
-                Email = u.Email,
-                Senha = u.Senha,
-                Role = u.Role,
-                Telefone = u.Telefone
-            }).ToList();
-        }
-
         public async Task<List<CreateUsuarioResponse>> GetAllPagedAsync()
         {
             var usuario = await _repository.GetAllAsync();
@@ -70,7 +60,10 @@ namespace NebuloHub.Application.UseCase
 
         public async Task<CreateUsuarioResponse?> GetByIdAsync(string cpf)
         {
-            var usuario = await _repository.GetByIdAsync(cpf);
+            var usuario = await _context.Usuario
+                .Include(u => u.Startups)
+                .FirstOrDefaultAsync(u => u.CPF == cpf);
+
             if (usuario == null) return null;
 
             return new CreateUsuarioResponse
@@ -80,9 +73,22 @@ namespace NebuloHub.Application.UseCase
                 Email = usuario.Email,
                 Senha = usuario.Senha,
                 Role = usuario.Role,
-                Telefone = usuario.Telefone
+                Telefone = usuario.Telefone,
+
+                Startups = usuario.Startups.Select(s => new CreateStartupResponse
+                {
+                    CNPJ = s.CNPJ,
+                    Video = s.Video,
+                    NomeStartup = s.NomeStartup,
+                    Site = s.Site,
+                    Descricao = s.Descricao,
+                    NomeResponsavel = s.NomeResponsavel,
+                    EmailStartup = s.EmailStartup,
+                    UsuarioCPF = s.UsuarioCPF
+                }).ToList()
             };
         }
+
 
         public async Task<bool> UpdateUsuarioAsync(string cpf, CreateUsuarioRequest request)
         {

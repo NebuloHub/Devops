@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using NebuloHub.Application.DTOs.Request;
 using NebuloHub.Application.DTOs.Response;
 using NebuloHub.Domain.Entity;
@@ -53,7 +54,7 @@ namespace NebuloHub.Application.UseCase
         public async Task<List<CreateStartupResponse>> GetAllPagedAsync()
         {
             var startup = await _repository.GetAllAsync();
-                
+
             return startup.Select(u => new CreateStartupResponse
             {
                 CNPJ = u.CNPJ,
@@ -63,13 +64,12 @@ namespace NebuloHub.Application.UseCase
             }).ToList();
         }
 
+
         public async Task<CreateStartupResponse?> GetByIdAsync(string cnpj)
         {
             var startup = await _context.Startup
-                .Include(m => m.Usuario)
-                .FirstOrDefaultAsync(m => m.CNPJ == cnpj);
-
-            if (startup == null) return null;
+                .Include(u => u.Avaliacoes)
+                .FirstOrDefaultAsync(u => u.CNPJ == cnpj);
 
             return new CreateStartupResponse
             {
@@ -80,17 +80,15 @@ namespace NebuloHub.Application.UseCase
                 Descricao = startup.Descricao,
                 NomeResponsavel = startup.NomeResponsavel,
                 EmailStartup = startup.EmailStartup,
+                UsuarioCPF = startup.UsuarioCPF,
 
-                Usuario = startup.Usuario == null ? null : new CreateUsuarioResponse
+                Avaliacoes = startup.Avaliacoes.Select(s => new CreateAvaliacaoResponse
                 {
-                    CPF = startup.Usuario.CPF,
-                    Nome = startup.Usuario.Nome,
-                    Email = startup.Usuario.Email,
-                    Senha = startup.Usuario.Senha,
-                    Role = startup.Usuario.Role,
-                    Telefone = startup.Usuario.Telefone
-                }
-                
+                    IdAvaliacao = s.IdAvaliacao,
+                    Nota = s.Nota,
+                    Comentario = s.Comentario,
+                    UsuarioCPF = s.UsuarioCPF
+                }).ToList()
             };
         }
 

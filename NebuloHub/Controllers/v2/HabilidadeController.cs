@@ -80,7 +80,7 @@ namespace NebuloHub.Controllers.v2
         /// </summary>
         /// <param name="request">Payload para criação</param>
         [HttpPost]
-        [Authorize(Roles = "ADMIN")]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(CreateHabilidadeResponse), (int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> PostHabilidade([FromBody] CreateHabilidadeRequest request)
@@ -97,7 +97,7 @@ namespace NebuloHub.Controllers.v2
         /// <param name="id">ID do registro</param>
         /// <param name="request">Payload para atualização</param>
         [HttpPut("{id}")]
-        [Authorize(Roles = "ADMIN")]
+        [AllowAnonymous]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]

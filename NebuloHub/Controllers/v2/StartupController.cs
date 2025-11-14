@@ -76,7 +76,7 @@ namespace NebuloHub.Controllers.v2
         /// </summary>
         /// <param name="request">Payload para criação</param>
         [HttpPost]
-        [Authorize(Roles = "ADMIN")]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(CreateStartupResponse), (int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> PostStartup([FromBody] CreateStartupRequest request)
@@ -93,7 +93,7 @@ namespace NebuloHub.Controllers.v2
         /// <param name="cnpj">CNPJ do registro</param>
         /// <param name="request">Payload para atualização</param>
         [HttpPut("{cnpj}")]
-        [Authorize(Roles = "ADMIN")]
+        [AllowAnonymous]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]

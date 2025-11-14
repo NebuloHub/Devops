@@ -11,6 +11,8 @@
         public string EmailStartup { get; set; }
 
         // Relacionamento
-        public CreateUsuarioResponse Usuario { get; set; }
+        public string UsuarioCPF { get; set; }
+
+        public List<CreateAvaliacaoResponse> Avaliacoes { get; set; }
     }
 }

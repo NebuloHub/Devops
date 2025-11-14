@@ -1667,11 +1667,16 @@
             "type": "string",
             "nullable": true
           },
+          "usuarioCPF": {
+            "type": "string",
+            "nullable": true
+          },
           "usuario": {
             "$ref": "#/components/schemas/CreateUsuarioResponse"
           },
-          "startup": {
-            "$ref": "#/components/schemas/CreateStartupResponse"
+          "startupCNPJ": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1809,8 +1814,16 @@
             "type": "string",
             "nullable": true
           },
-          "usuario": {
-            "$ref": "#/components/schemas/CreateUsuarioResponse"
+          "usuarioCPF": {
+            "type": "string",
+            "nullable": true
+          },
+          "avaliacoes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreateAvaliacaoResponse"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1873,6 +1886,13 @@
           "telefone": {
             "type": "integer",
             "format": "int64",
+            "nullable": true
+          },
+          "startups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreateStartupResponse"
+            },
             "nullable": true
           }
         },

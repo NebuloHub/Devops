@@ -16,7 +16,6 @@ namespace NebuloHub.Domain.Entity
         public long? Telefone { get; set; }
 
         public virtual ICollection<Startup> Startups { get; private set; } = new List<Startup>();
-        public virtual ICollection<Avaliacao> Avaliacoes { get; private set; } = new List<Avaliacao>();
 
         private Usuario(string cpf, string nome, string email, string senha, Role role, long? telefone)
         {

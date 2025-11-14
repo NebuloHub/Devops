@@ -13,5 +13,7 @@ namespace NebuloHub.Application.DTOs.Response
         [EnumDataType(typeof(Role))]
         public Role Role { get; set; }
         public long? Telefone { get; set; }
+
+        public List<CreateStartupResponse> Startups { get; set; }
     }
 }

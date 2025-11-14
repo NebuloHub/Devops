@@ -92,7 +92,7 @@ namespace NebuloHub.Controllers.v2
         /// <param name="cpf">CPF do registro</param>
         /// <param name="request">Payload para atualização</param>
         [HttpPut("{cpf}")]
-        [Authorize(Roles = "ADMIN")]
+        [AllowAnonymous]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]

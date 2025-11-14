@@ -20,6 +20,8 @@ namespace NebuloHub.Domain.Entity
 
         public virtual ICollection<Possui> Possuis { get; private set; } = new List<Possui>();
 
+        public virtual ICollection<Avaliacao> Avaliacoes { get; private set; } = new List<Avaliacao>();
+
 
         private Startup(string cnpj, string? video, string nomeStartup, string? site, string descricao, string? nomeResponsavel, string emailStartup, string usuarioCpf )
         {

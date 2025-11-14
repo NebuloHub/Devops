@@ -8,7 +8,8 @@
 
 
         // Relacionamento
+        public string UsuarioCPF { get; set; }
         public CreateUsuarioResponse Usuario { get; set; }
-        public CreateStartupResponse Startup { get; set; }
+        public string StartupCNPJ { get; set; }
     }
 }

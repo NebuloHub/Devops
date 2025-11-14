@@ -85,15 +85,7 @@ namespace NebuloHub.Application.UseCase
                     Telefone = avaliacao.Usuario.Telefone
                 },
 
-                Startup = avaliacao.Startup == null ? null : new CreateStartupResponse
-                {
-                    CNPJ = avaliacao.Startup.CNPJ,
-                    Video = avaliacao.Startup.Video,
-                    NomeStartup = avaliacao.Startup.NomeStartup,
-                    Site = avaliacao.Startup.Site,
-                    Descricao = avaliacao.Startup.Descricao,
-                    NomeResponsavel = avaliacao.Startup.NomeResponsavel
-                }
+                StartupCNPJ = avaliacao.StartupCNPJ
             };
         }
 
