@@ -75,7 +75,7 @@ namespace NebuloHub.Controllers.v2
         /// </summary>
         /// <param name="request">Payload para criação</param>
         [HttpPost]
-        [Authorize(Roles = "ADMIN")]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(CreateUsuarioResponse), (int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> PostUsuario([FromBody] CreateUsuarioRequest request)
