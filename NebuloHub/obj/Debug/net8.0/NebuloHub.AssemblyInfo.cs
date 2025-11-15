@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NebuloHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bab293338459f788b8a8d07c3a7ff097f80eda1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a77574f420ce2e2f79557f6341e992c10846d17f")]
 [assembly: System.Reflection.AssemblyProductAttribute("NebuloHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NebuloHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

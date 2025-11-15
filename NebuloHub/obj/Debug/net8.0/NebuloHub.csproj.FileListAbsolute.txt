@@ -1,3 +1,4 @@
+C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\runtimes\win-x86\native\MklImports.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\testhost.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\testhost.exe
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\appsettings.Development.json
@@ -705,7 +706,6 @@ C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\runtimes\
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\runtimes\win-x64\native\MklImports.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\runtimes\win-x64\native\MklProxyNative.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\runtimes\win-x64\native\libiomp5md.dll
-C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\runtimes\win-x86\native\MklImports.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\runtimes\win-x86\native\MklProxyNative.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\runtimes\win-x86\native\libiomp5md.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\bin\Debug\net8.0\runtimes\linux-arm\native\libMatrixFactorizationNative.so
@@ -756,7 +756,6 @@ C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\staticweb
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\swae.build.ex.cache
-C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\NebuloHub.csproj.Up2Date
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\NebuloHub.dll
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub\obj\Debug\net8.0\refint\NebuloHub.dll

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36109.1 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11201.2 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NebuloHub", "NebuloHub\NebuloHub.csproj", "{3BC0FA02-245D-4100-B843-65DA512993F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NebuloHub.Tests", "NebuloHub.Tests\NebuloHub.Tests.csproj", "{EB8D0A68-6A7A-1F39-2E83-47AB6D4FE922}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3BC0FA02-245D-4100-B843-65DA512993F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BC0FA02-245D-4100-B843-65DA512993F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BC0FA02-245D-4100-B843-65DA512993F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8D0A68-6A7A-1F39-2E83-47AB6D4FE922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8D0A68-6A7A-1F39-2E83-47AB6D4FE922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8D0A68-6A7A-1F39-2E83-47AB6D4FE922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8D0A68-6A7A-1F39-2E83-47AB6D4FE922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

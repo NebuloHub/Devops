@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NebuloHub</name>
+    </assembly>
+    <members>
+        <member name="P:NebuloHub.Application.DTOs.Request.CreateAvaliacaoRequest.Nota">
+            <example>0 a 10</example>
+        </member>
+        <member name="P:NebuloHub.Application.DTOs.Request.CreateStartupRequest.CNPJ">
+            <example>O CNPJ deve ter no minimo 14 digitos</example>
+        </member>
+        <member name="P:NebuloHub.Application.DTOs.Request.CreateStartupRequest.Video">
+            <example>Link de um video ja postado na internet</example>
+        </member>
+        <member name="P:NebuloHub.Application.DTOs.Request.CreateUsuarioRequest.CPF">
+            <example>O CPF deve ter no minimo 11 digitos</example>
+        </member>
+        <member name="P:NebuloHub.Application.DTOs.Request.CreateUsuarioRequest.Email">
+            <example>email@gmail.com</example>
+        </member>
+        <member name="P:NebuloHub.Application.DTOs.Request.CreateUsuarioRequest.Senha">
+            <example>Senha@135</example>
+        </member>
+        <member name="M:NebuloHub.Application.UseCase.AvaliacaoUseCase.GetAllPagedAsync(System.Int32,System.Int32)">
+            <summary>
+            Retorna os Avaliacao paginados.
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Application.UseCase.HabilidadeUseCase.GetAllPagedAsync(System.Int32,System.Int32)">
+            <summary>
+            Retorna os Habilidade paginados.
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Application.UseCase.PossuiUseCase.GetAllPagedAsync(System.Int32,System.Int32)">
+            <summary>
+            Retorna os Possui paginados.
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Application.UseCase.StartupUseCase.GetAllPagedAsync">
+            <summary>
+            Retorna todos os Startup.
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Controllers.v1.AuthController.Login(NebuloHub.Controllers.v1.AuthController.LoginRequest)">
+            <summary>
+            Endpoint de login (gera o token JWT)
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Controllers.v1.AuthController.GetDadosProtegidos">
+            <summary>
+            Endpoint protegido com JWT
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Controllers.v1.HabilidadeController.GetHabilidade(System.Int32,System.Int32)">
+            <summary>
+            Retorna todos os Habilidade com paginação.
+            </summary>
+            <param name="page">Número da página (default = 1)</param>
+            <param name="pageSize">Quantidade de itens por página (default = 10)</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v1.HabilidadeController.GetHabilidadeById(System.Int64)">
+            <summary>
+            Retorna um Habilidade pelo ID.
+            </summary>
+            <param name="id">ID do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v1.HabilidadeController.PostHabilidade(NebuloHub.Application.DTOs.Request.CreateHabilidadeRequest)">
+            <summary>
+            Cria um novo Habilidade.
+            </summary>
+            <param name="request">Payload para criação</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v1.HabilidadeController.PutHabilidade(System.Int64,NebuloHub.Application.DTOs.Request.CreateHabilidadeRequest)">
+            <summary>
+            Atualiza um habilidade existente.
+            </summary>
+            <param name="id">ID do registro</param>
+            <param name="request">Payload para atualização</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v1.HabilidadeController.DeleteHabilidade(System.Int64)">
+            <summary>
+            Deleta um Habilidade existente.
+            </summary>
+            <param name="id">ID do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.AnaliseStartupController.AnalisarStartup(NebuloHub.Application.DTOs.Request.AnalisarStartupRequest)">
+            <summary>
+            Chama a procedure pkg_funcao2_validacao.analisar_startup e retorna o resultado do CLOB.
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.AuthController.Login(NebuloHub.Controllers.v2.AuthController.LoginRequest)">
+            <summary>
+            Endpoint de login (gera o token JWT)
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.AuthController.GetDadosProtegidos">
+            <summary>
+            Endpoint protegido com JWT
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.AvaliacaoController.GetAvaliacao(System.Int32,System.Int32)">
+            <summary>
+            Retorna todos os Avaliacao com paginação.
+            </summary>
+            <param name="page">Número da página (default = 1)</param>
+            <param name="pageSize">Quantidade de itens por página (default = 10)</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.AvaliacaoController.GetAvaliacaoById(System.Int64)">
+            <summary>
+            Retorna um Avaliacao pelo ID.
+            </summary>
+            <param name="id">ID do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.AvaliacaoController.PostAvaliacao(NebuloHub.Application.DTOs.Request.CreateAvaliacaoRequest)">
+            <summary>
+            Cria um novo Avaliacao.
+            </summary>
+            <param name="request">Payload para criação</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.AvaliacaoController.PutAvaliacao(System.Int64,NebuloHub.Application.DTOs.Request.CreateAvaliacaoRequest)">
+            <summary>
+            Atualiza um Avaliacao existente.
+            </summary>
+            <param name="id">ID do registro</param>
+            <param name="request">Payload para atualização</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.AvaliacaoController.DeleteAvaliacao(System.Int64)">
+            <summary>
+            Deleta um Avaliacao existente.
+            </summary>
+            <param name="id">ID do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.HabilidadeController.GetHabilidade(System.Int32,System.Int32)">
+            <summary>
+            Retorna todos os Habilidade com paginação.
+            </summary>
+            <param name="page">Número da página (default = 1)</param>
+            <param name="pageSize">Quantidade de itens por página (default = 10)</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.HabilidadeController.GetHabilidadeById(System.Int64)">
+            <summary>
+            Retorna um Habilidade pelo ID.
+            </summary>
+            <param name="id">ID do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.HabilidadeController.PostHabilidade(NebuloHub.Application.DTOs.Request.CreateHabilidadeRequest)">
+            <summary>
+            Cria um novo Habilidade.
+            </summary>
+            <param name="request">Payload para criação</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.HabilidadeController.PutHabilidade(System.Int64,NebuloHub.Application.DTOs.Request.CreateHabilidadeRequest)">
+            <summary>
+            Atualiza um habilidade existente.
+            </summary>
+            <param name="id">ID do registro</param>
+            <param name="request">Payload para atualização</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.HabilidadeController.DeleteHabilidade(System.Int64)">
+            <summary>
+            Deleta um Habilidade existente.
+            </summary>
+            <param name="id">ID do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.PossuiController.GetPossui(System.Int32,System.Int32)">
+            <summary>
+            Retorna todos os Possui com paginação.
+            </summary>
+            <param name="page">Número da página (default = 1)</param>
+            <param name="pageSize">Quantidade de itens por página (default = 10)</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.PossuiController.GetPossuiById(System.Int64)">
+            <summary>
+            Retorna um Possui pelo ID.
+            </summary>
+            <param name="id">ID do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.PossuiController.PostPossui(NebuloHub.Application.DTOs.Request.CreatePossuiRequest)">
+            <summary>
+            Cria um novo Possui.
+            </summary>
+            <param name="request">Payload para criação</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.PossuiController.PutPossui(System.Int64,NebuloHub.Application.DTOs.Request.CreatePossuiRequest)">
+            <summary>
+            Atualiza um Possui existente.
+            </summary>
+            <param name="id">ID do registro</param>
+            <param name="request">Payload para atualização</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.PossuiController.DeletePossui(System.Int64)">
+            <summary>
+            Deleta um Possui existente.
+            </summary>
+            <param name="id">ID do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.StartupController.GetStartup">
+            <summary>
+            Retorna todos os Startup.
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.StartupController.GetStartupById(System.String)">
+            <summary>
+            Retorna um Startup pelo CNPJ.
+            </summary>
+            <param name="cnpj">cnpj do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.StartupController.PostStartup(NebuloHub.Application.DTOs.Request.CreateStartupRequest)">
+            <summary>
+            Cria um novo Startup.
+            </summary>
+            <param name="request">Payload para criação</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.StartupController.PutStartup(System.String,NebuloHub.Application.DTOs.Request.CreateStartupRequest)">
+            <summary>
+            Atualiza um Startup existente.
+            </summary>
+            <param name="cnpj">CNPJ do registro</param>
+            <param name="request">Payload para atualização</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.StartupController.DeleteStartup(System.String)">
+            <summary>
+            Deleta um Startup existente.
+            </summary>
+            <param name="cnpj">ID do registro</param>
+        </member>
+        <member name="T:NebuloHub.Migrations.NebuloMigration">
+            <inheritdoc />
+        </member>
+        <member name="M:NebuloHub.Migrations.NebuloMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NebuloHub.Migrations.NebuloMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NebuloHub.Migrations.NebuloMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
