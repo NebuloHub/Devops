@@ -121,11 +121,8 @@ cd NebuloHub.NET
     http://localhost:5100/health
 ```
 
-- Para rodar os teste é preciso fazer isso
+- Foi utilizado somente testes unitarios, para rodar os teste é preciso fazer isso no terminal da solução
 
-<img width="934" height="736" alt="image" src="https://github.com/user-attachments/assets/5d7f7366-1a98-44c4-aa3a-b33a979a6efb" />
-
-- Ou rodar 
  ```bash
     dotnet test
 ```
