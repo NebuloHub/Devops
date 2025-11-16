@@ -23,16 +23,22 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// JWT
+// ===============================
+// CONFIGURAÇÕES DE JWT
+// ===============================
 var jwtKey = builder.Configuration["Jwt:Key"];
 var jwtIssuer = builder.Configuration["Jwt:Issuer"];
 var jwtAudience = builder.Configuration["Jwt:Audience"];
 
-// Configuração do banco Oracle
+// ===============================
+// BANCO DE DADOS
+// ===============================
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("OracleNebuloHub")));
 
-// Adiciona controladores e configura JsonOptions
+// ===============================
+// CONTROLLERS + JSON
+// ===============================
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
@@ -41,7 +47,9 @@ builder.Services.AddControllers()
 
 builder.Services.AddEndpointsApiExplorer();
 
-// Registro de dependências
+// ===============================
+// DEPENDÊNCIAS (Repositories / UseCases / Validators)
+// ===============================
 builder.Services.AddScoped<IRepository<Avaliacao>, Repository<Avaliacao>>();
 builder.Services.AddScoped<IRepository<Habilidade>, Repository<Habilidade>>();
 builder.Services.AddScoped<IRepository<Possui>, Repository<Possui>>();
@@ -49,15 +57,12 @@ builder.Services.AddScoped<IRepository<Startup>, Repository<Startup>>();
 builder.Services.AddScoped<IRepository<Usuario>, Repository<Usuario>>();
 builder.Services.AddScoped<StartupProcedureRepository>();
 
-
-
 // Validators
 builder.Services.AddScoped<CreateAvaliacaoRequestValidator>();
 builder.Services.AddScoped<CreateHabilidadeRequestValidator>();
 builder.Services.AddScoped<CreatePossuiRequestValidator>();
 builder.Services.AddScoped<CreateStartupRequestValidator>();
 builder.Services.AddScoped<CreateUsuarioRequestValidator>();
-
 
 // UseCases
 builder.Services.AddScoped<AvaliacaoUseCase>();
@@ -67,14 +72,17 @@ builder.Services.AddScoped<StartupUseCase>();
 builder.Services.AddScoped<UsuarioUseCase>();
 builder.Services.AddScoped<AnaliseStartupUseCase>();
 
-
-// Configuração do comportamento API
+// ===============================
+// BEHAVIOR
+// ===============================
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 });
 
-// Versionamento
+// ===============================
+// VERSIONAMENTO
+// ===============================
 builder.Services.AddApiVersioning(o =>
 {
     o.AssumeDefaultVersionWhenUnspecified = true;
@@ -87,7 +95,9 @@ builder.Services.AddVersionedApiExplorer(setup =>
     setup.SubstituteApiVersionInUrl = true;
 });
 
-// Swagger
+// ===============================
+// SWAGGER
+// ===============================
 builder.Services.AddSwaggerGen(options =>
 {
     options.OperationFilter<SwaggerDefaultValues>();
@@ -122,7 +132,11 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-// HealthChecks
+builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerGenOptions>();
+
+// ===============================
+// HEALTH CHECKS
+// ===============================
 builder.Services.AddHealthChecks()
     .AddOracle(builder.Configuration.GetConnectionString("OracleNebuloHub"), name: "oracle");
 
@@ -133,10 +147,11 @@ builder.Services.AddHealthChecksUI(opt =>
     opt.AddHealthCheckEndpoint("API Health", "/health");
 }).AddInMemoryStorage();
 
-builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerGenOptions>();
+// ===============================
+// JWT AUTHENTICATION
+// ===============================
 builder.Services.AddSingleton<TokenService>();
 
-// JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -155,45 +170,49 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// OpenTelemetry para Tracing
+// ===============================
+// OPEN TELEMETRY
+// ===============================
 builder.Services.AddOpenTelemetry()
     .WithTracing(t =>
     {
         t.AddAspNetCoreInstrumentation()
          .AddHttpClientInstrumentation()
-
          .AddSource("Microsoft.EntityFrameworkCore")
-
-         .AddConsoleExporter(); // Exporta para o console
+         .AddConsoleExporter();
     });
 
-
-
+// ===============================
+// APP
+// ===============================
 var app = builder.Build();
-var versionDescriptionProvider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
+var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
-        foreach (var description in versionDescriptionProvider.ApiVersionDescriptions)
+        foreach (var description in provider.ApiVersionDescriptions)
         {
             options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json",
-                $"Web API - {description.GroupName.ToUpper()}");
+                $"NebuloHub API - {description.GroupName.ToUpper()}");
         }
     });
 }
 
 app.UseHttpsRedirection();
+
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.MapHealthChecks("/health", new HealthCheckOptions
 {
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
 });
+
 app.MapHealthChecksUI(options =>
 {
     options.UIPath = "/health-ui";
@@ -201,5 +220,5 @@ app.MapHealthChecksUI(options =>
 
 app.Run();
 
-// Para o WebApplicationFactory nos testes
+// Necessário para WebApplicationFactory
 public partial class Program { }
