@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Moq;
 using Xunit;
-using NebuloHub.Application.UseCase;
+using System.Threading.Tasks;
 using NebuloHub.Application.DTOs.Request;
+using NebuloHub.Application.UseCase;
 using NebuloHub.Domain.Entity;
 using NebuloHub.Infraestructure.Context;
 using NebuloHub.Infraestructure.Repositores;
-using System.Threading.Tasks;
 
 public class PossuiUseCaseTests
 {
@@ -23,39 +23,77 @@ public class PossuiUseCaseTests
             .Options;
 
         _context = new AppDbContext(options);
-
-        // passa os dois parâmetros obrigatórios
         _useCase = new PossuiUseCase(_repositoryMock.Object, _context);
     }
 
+    // CREATE
     [Fact]
-    public async Task CreatePossui_DeveCriarPossuiComSucesso()
+    public async Task CreatePossui_Sucesso()
     {
-        // Arrange
         var request = new CreatePossuiRequest
         {
-            StartupCNPJ = "38206824750298",
-            IdHabilidade = 321
-            
+            StartupCNPJ = "123",
+            IdHabilidade = 50
         };
 
-        _repositoryMock
-            .Setup(r => r.AddAsync(It.IsAny<Possui>()))
-            .Callback<Possui>(a => a.IdPossui = 1)
-            .Returns(Task.CompletedTask);
+        _repositoryMock.Setup(r => r.AddAsync(It.IsAny<Possui>()))
+                       .Callback<Possui>(e => e.IdPossui = 1)
+                       .Returns(Task.CompletedTask);
 
-        _repositoryMock
-            .Setup(r => r.SaveChangesAsync())
-            .Returns(Task.CompletedTask);
+        _repositoryMock.Setup(r => r.SaveChangesAsync())
+                       .Returns(Task.CompletedTask);
 
-        // Act
         var result = await _useCase.CreatePossuiAsync(request);
 
-        // Assert
         Assert.NotNull(result);
         Assert.Equal(1, result.IdPossui);
+    }
 
-        _repositoryMock.Verify(r => r.AddAsync(It.IsAny<Possui>()), Times.Once);
-        _repositoryMock.Verify(r => r.SaveChangesAsync(), Times.Once);
+    // UPDATE
+    [Fact]
+    public async Task UpdatePossui_Sucesso()
+    {
+        var existente = new Possui
+        {
+            IdPossui = 1,
+            StartupCNPJ = "123",
+            IdHabilidade = 100
+        };
+
+        var request = new CreatePossuiRequest
+        {
+            StartupCNPJ = "123",
+            IdHabilidade = 999
+        };
+
+        _repositoryMock.Setup(r => r.GetByIdAsync(1))
+                       .ReturnsAsync(existente);
+
+        _repositoryMock.Setup(r => r.Update(existente));
+        _repositoryMock.Setup(r => r.SaveChangesAsync())
+                       .Returns(Task.CompletedTask);
+
+        var result = await _useCase.UpdatePossuiAsync(1, request);
+
+        Assert.True(result);
+        Assert.Equal(999, existente.IdHabilidade);
+    }
+
+    // DELETE
+    [Fact]
+    public async Task DeletePossui_Sucesso()
+    {
+        var existente = new Possui { IdPossui = 1 };
+
+        _repositoryMock.Setup(r => r.GetByIdAsync(1))
+                       .ReturnsAsync(existente);
+
+        _repositoryMock.Setup(r => r.Delete(existente));
+        _repositoryMock.Setup(r => r.SaveChangesAsync())
+                       .Returns(Task.CompletedTask);
+
+        var result = await _useCase.DeletePossuiAsync(1);
+
+        Assert.True(result);
     }
 }

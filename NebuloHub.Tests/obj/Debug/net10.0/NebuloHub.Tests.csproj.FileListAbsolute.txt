@@ -1,3 +1,4 @@
+C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\runtimes\osx-x64\native\libMklImports.dylib
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\.msCoverageSourceRootsMapping_NebuloHub.Tests
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\CoverletSourceRootsMapping_NebuloHub.Tests
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\testhost.dll
@@ -704,7 +705,6 @@ C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\ru
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\runtimes\linux-x64\native\libMklImports.so
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\runtimes\linux-x64\native\libMklProxyNative.so
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\runtimes\linux-x64\native\libMklProxyNative.so.dbg
-C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\runtimes\osx-x64\native\libMklImports.dylib
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\runtimes\osx-x64\native\libMklProxyNative.dylib
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\runtimes\osx-x64\native\libMklProxyNative.dylib.dwarf
 C:\Users\Passos Magicos\Documents\Luiz\.NET\NebuloHub.Tests\bin\Debug\net10.0\runtimes\win-x64\native\MklImports.dll

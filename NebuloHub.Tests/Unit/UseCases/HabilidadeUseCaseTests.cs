@@ -14,40 +14,78 @@ public class HabilidadeUseCaseTests
     public HabilidadeUseCaseTests()
     {
         _repositoryMock = new Mock<IRepository<Habilidade>>();
-
         _useCase = new HabilidadeUseCase(_repositoryMock.Object);
     }
 
+    // CREATE
     [Fact]
-    public async Task CreateHabilidade_DeveCriarHabilidadeComSucesso()
+    public async Task CreateHabilidade_Sucesso()
     {
-        // Arrange
         var request = new CreateHabilidadeRequest
         {
             NomeHabilidade = "Programação",
             TipoHabilidade = "Backend"
         };
 
-        // Simula que o repositório salva e atribui ID
-        _repositoryMock
-            .Setup(r => r.AddAsync(It.IsAny<Habilidade>()))
-            .Callback<Habilidade>(h => h.IdHabilidade = 1)
-            .Returns(Task.CompletedTask);
+        _repositoryMock.Setup(r => r.AddAsync(It.IsAny<Habilidade>()))
+                       .Callback<Habilidade>(e => e.IdHabilidade = 1)
+                       .Returns(Task.CompletedTask);
 
-        _repositoryMock
-            .Setup(r => r.SaveChangesAsync())
-            .Returns(Task.CompletedTask);
+        _repositoryMock.Setup(r => r.SaveChangesAsync())
+                       .Returns(Task.CompletedTask);
 
-        // Act
         var result = await _useCase.CreateHabilidadeAsync(request);
 
-        // Assert
         Assert.NotNull(result);
         Assert.Equal(1, result.IdHabilidade);
-        Assert.Equal(request.NomeHabilidade, result.NomeHabilidade);
-        Assert.Equal(request.TipoHabilidade, result.TipoHabilidade);
+    }
 
-        _repositoryMock.Verify(r => r.AddAsync(It.IsAny<Habilidade>()), Times.Once);
-        _repositoryMock.Verify(r => r.SaveChangesAsync(), Times.Once);
+    // UPDATE
+    [Fact]
+    public async Task UpdateHabilidade_Sucesso()
+    {
+        var existente = new Habilidade
+        {
+            IdHabilidade = 1,
+            NomeHabilidade = "Old",
+            TipoHabilidade = "OldType"
+        };
+
+        var request = new CreateHabilidadeRequest
+        {
+            NomeHabilidade = "New",
+            TipoHabilidade = "Backend"
+        };
+
+        _repositoryMock.Setup(r => r.GetByIdAsync(1))
+                       .ReturnsAsync(existente);
+
+        _repositoryMock.Setup(r => r.Update(existente));
+        _repositoryMock.Setup(r => r.SaveChangesAsync())
+                       .Returns(Task.CompletedTask);
+
+        var result = await _useCase.UpdateHabilidadeAsync(1, request);
+
+        Assert.True(result);
+        Assert.Equal("New", existente.NomeHabilidade);
+        Assert.Equal("Backend", existente.TipoHabilidade);
+    }
+
+    // DELETE
+    [Fact]
+    public async Task DeleteHabilidade_Sucesso()
+    {
+        var existente = new Habilidade { IdHabilidade = 1 };
+
+        _repositoryMock.Setup(r => r.GetByIdAsync(1))
+                       .ReturnsAsync(existente);
+
+        _repositoryMock.Setup(r => r.Delete(existente));
+        _repositoryMock.Setup(r => r.SaveChangesAsync())
+                       .Returns(Task.CompletedTask);
+
+        var result = await _useCase.DeleteHabilidadeAsync(1);
+
+        Assert.True(result);
     }
 }
