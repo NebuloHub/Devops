@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NebuloHub.Application.DTOs.Request;
 using NebuloHub.Application.DTOs.Response;
 using NebuloHub.Application.UseCase;
@@ -18,10 +19,13 @@ namespace NebuloHub.Controllers.v2
         private readonly PossuiUseCase _possuiUseCase;
         private readonly CreatePossuiRequestValidator _validationPossui;
 
-        public PossuiController(PossuiUseCase possuiUseCase, CreatePossuiRequestValidator validationPossui)
+        private readonly ILogger<PossuiController> _logger;
+
+        public PossuiController(PossuiUseCase possuiUseCase, CreatePossuiRequestValidator validationPossui, ILogger<PossuiController> logger)
         {
             _possuiUseCase = possuiUseCase;
             _validationPossui = validationPossui;
+            _logger = logger;
         }
 
         /// <summary>
@@ -34,24 +38,38 @@ namespace NebuloHub.Controllers.v2
         [ProducesResponseType(typeof(IEnumerable<CreatePossuiResponse>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetPossui([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
-            var possui = await _possuiUseCase.GetAllPagedAsync(page, pageSize);
 
-            var result = possui.Select(d => new
+            try
             {
-                d.IdPossui,
-                links = new
+                var possui = await _possuiUseCase.GetAllPagedAsync(page, pageSize);
+
+                var result = possui.Select(d => new
                 {
-                    self = Url.Action(nameof(GetPossuiById), new { id = d.IdPossui })
-                }
-            });
+                    d.IdPossui,
+                    links = new
+                    {
+                        self = Url.Action(nameof(GetPossuiById), new { id = d.IdPossui })
+                    }
+                });
 
-            return Ok(new
+                return Ok(new
+                {
+                    page,
+                    pageSize,
+                    totalItems = possui.Count(),
+                    items = result
+                });
+            }
+            catch (DbUpdateException ex)
             {
-                page,
-                pageSize,
-                totalItems = possui.Count(),
-                items = result
-            });
+                return BadRequest(new { erro = "Erro ao acessar o banco: " + ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
+
         }
 
         /// <summary>
@@ -64,13 +82,30 @@ namespace NebuloHub.Controllers.v2
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> GetPossuiById(long id)
         {
-            var possui = await _possuiUseCase.GetByIdAsync(id);
-            if (possui == null)
-                return NotFound();
+
+            try
+            {
+                var possui = await _possuiUseCase.GetByIdAsync(id);
+                if (possui == null)
+                    return NotFound();
 
 
-            return Ok(possui);
+                return Ok(possui);
+            }
+            catch (DbUpdateException ex)
+            {
+                return BadRequest(new { erro = "Erro ao acessar o banco: " + ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
+            
         }
+
+
+
 
         /// <summary>
         /// Cria um novo Possui.
@@ -82,11 +117,32 @@ namespace NebuloHub.Controllers.v2
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> PostPossui([FromBody] CreatePossuiRequest request)
         {
-            _validationPossui.ValidateAndThrow(request);
 
-            var possuiResponse = await _possuiUseCase.CreatePossuiAsync(request);
-            return CreatedAtAction(nameof(GetPossuiById), new { id = possuiResponse.IdPossui }, possuiResponse);
+            try
+            {
+                _validationPossui.ValidateAndThrow(request);
+
+                var possuiResponse = await _possuiUseCase.CreatePossuiAsync(request);
+                return CreatedAtAction(nameof(GetPossuiById), new { id = possuiResponse.IdPossui }, possuiResponse);
+            }
+            catch (ValidationException ex)
+            {
+                return BadRequest(new { erro = ex.Message });
+            }
+            catch (DbUpdateException ex)
+            {
+                return BadRequest(new { erro = "Erro ao acessar o banco: " + ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado no cadastro.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
+
         }
+
+
+
 
         /// <summary>
         /// Atualiza um Possui existente.
@@ -100,12 +156,33 @@ namespace NebuloHub.Controllers.v2
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> PutPossui(long id, [FromBody] CreatePossuiRequest request)
         {
-            var updated = await _possuiUseCase.UpdatePossuiAsync(id, request);
-            if (!updated)
-                return NotFound();
 
-            return NoContent();
+            try
+            {
+                var updated = await _possuiUseCase.UpdatePossuiAsync(id, request);
+                if (!updated)
+                    return NotFound();
+
+                return NoContent();
+            }
+            catch (ValidationException ex)
+            {
+                return BadRequest(new { erro = ex.Message });
+            }
+            catch (DbUpdateException ex)
+            {
+                return BadRequest(new { erro = "Erro no banco: " + ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado ao atualizar possui.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
+
         }
+
+
+
 
         /// <summary>
         /// Deleta um Possui existente.
@@ -117,11 +194,21 @@ namespace NebuloHub.Controllers.v2
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> DeletePossui(long id)
         {
-            var deleted = await _possuiUseCase.DeletePossuiAsync(id);
-            if (!deleted)
-                return NotFound();
 
-            return NoContent();
+            try
+            {
+                var deleted = await _possuiUseCase.DeletePossuiAsync(id);
+                if (!deleted)
+                    return NotFound();
+
+                return Ok(new { mensagem = "Possui deletado com sucesso." });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado ao deletar possui.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
+
         }
     }
 }

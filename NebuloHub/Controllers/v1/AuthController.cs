@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NebuloHub.Application.DTOs.Request;
 using NebuloHub.Application.UseCase;
 using NebuloHub.Services;
 using System.Security.Claims;
@@ -59,10 +60,5 @@ namespace NebuloHub.Controllers.v1
             return Ok($"Bem-vindo, {username}! Seu papel é: {role}. Você acessou um endpoint protegido");
         }
 
-        public class LoginRequest
-        {
-            public string Email { get; set; } = string.Empty;
-            public string Senha { get; set; } = string.Empty;
-        }
     }
 }

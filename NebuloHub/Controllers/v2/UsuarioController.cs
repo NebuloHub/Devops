@@ -45,31 +45,43 @@ namespace NebuloHub.Controllers.v2
         [ProducesResponseType(typeof(IEnumerable<CreateUsuarioResponse>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> GetUsuario()
         {
-            _logger.LogInformation("Iniciando busca de todos os usuários...");
 
-            var usuario = await _usuarioUseCase.GetAllPagedAsync();
-
-            _logger.LogInformation("Busca de usuários concluída. {count} registros encontrados.", usuario.Count());
-
-            var result = usuario.Select(d => new
+            try
             {
-                d.CPF,
-                d.Nome,
-                d.Email,
-                links = new
+                _logger.LogInformation("Iniciando busca de todos os usuários...");
+
+                var usuario = await _usuarioUseCase.GetAllPagedAsync();
+
+                _logger.LogInformation("Busca de usuários concluída. {count} registros encontrados.", usuario.Count());
+
+                var result = usuario.Select(d => new
                 {
-                    self = Url.Action(nameof(GetUsuarioById), new { cpf = d.CPF })
-                }
-            });
+                    d.CPF,
+                    d.Nome,
+                    d.Email,
+                    links = new
+                    {
+                        self = Url.Action(nameof(GetUsuarioById), new { cpf = d.CPF })
+                    }
+                });
 
-            return Ok(new
+                return Ok(new
+                {
+                    totalItems = usuario.Count(),
+                    items = result
+                });
+            }
+            catch (DbUpdateException ex)
             {
-                totalItems = usuario.Count(),
-                items = result
-            });
+                return BadRequest(new { erro = "Erro ao acessar o banco: " + ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado no cadastro.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
+
         }
-
-
 
 
 
@@ -84,21 +96,33 @@ namespace NebuloHub.Controllers.v2
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> GetUsuarioById(string cpf)
         {
-            _logger.LogInformation("Buscando usuário com CPF {cpf}", cpf);
 
-            var usuario = await _usuarioUseCase.GetByIdAsync(cpf);
-            if (usuario == null)
+            try
             {
-                _logger.LogWarning("Usuário {cpf} não encontrado.", cpf);
-                return NotFound();
+                _logger.LogInformation("Buscando usuário com CPF {cpf}", cpf);
+
+                var usuario = await _usuarioUseCase.GetByIdAsync(cpf);
+                if (usuario == null)
+                {
+                    _logger.LogWarning("Usuário {cpf} não encontrado.", cpf);
+                    return NotFound();
+                }
+
+                _logger.LogInformation("Usuário {cpf} encontrado com sucesso.", cpf);
+                return Ok(usuario);
+            }
+            catch (DbUpdateException ex)
+            {
+                return BadRequest(new { erro = "Erro ao acessar o banco: " + ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado no cadastro.");
+                return StatusCode(500, new { erro = ex.Message });
             }
 
-            _logger.LogInformation("Usuário {cpf} encontrado com sucesso.", cpf);
-            return Ok(usuario);
+
         }
-
-
-
 
 
 

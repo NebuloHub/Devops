@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "NebuloHub.Controllers.v1.AuthController\u002BLoginRequest",
+        "Type": "NebuloHub.Application.DTOs.Request.LoginRequest",
         "IsRequired": true
       }
     ],
@@ -256,7 +256,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "NebuloHub.Controllers.v2.AuthController\u002BLoginRequest",
+        "Type": "NebuloHub.Application.DTOs.Request.LoginRequest",
         "IsRequired": true
       }
     ],

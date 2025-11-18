@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using NebuloHub.Application.DTOs.Request;
 using NebuloHub.Application.UseCase;
 using NebuloHub.Services;
 using System.Security.Claims;
@@ -30,25 +32,36 @@ namespace NebuloHub.Controllers.v2
         [AllowAnonymous]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            _logger.LogInformation("Iniciando login do usuario...");
 
-            var usuario = await _usuarioUseCase.LoginAsync(request.Email, request.Senha);
-
-            if (usuario == null)
-                return Unauthorized("Usuário ou senha inválidos");
-
-            var token = _tokenService.GenerateToken(usuario.CPF, usuario.Email, usuario.Role.ToString());
-
-            return Ok(new
+            try
             {
-                token,
-                usuario = new
+                _logger.LogInformation("Iniciando login do usuario...");
+
+                var usuario = await _usuarioUseCase.LoginAsync(request.Email, request.Senha);
+
+                if (usuario == null)
+                    return Unauthorized("Usuário ou senha inválidos");
+
+                var token = _tokenService.GenerateToken(usuario.CPF, usuario.Email, usuario.Role.ToString());
+
+                return Ok(new
                 {
-                    usuario.Nome,
-                    usuario.Email,
-                    usuario.Role
-                }
-            });
+                    token,
+                    usuario = new
+                    {
+                        usuario.Nome,
+                        usuario.Email,
+                        usuario.Role
+                    }
+                });
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
+
         }
 
         /// <summary>
@@ -58,16 +71,25 @@ namespace NebuloHub.Controllers.v2
         [Authorize]
         public IActionResult GetDadosProtegidos()
         {
-            var username = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            var role = User.FindFirst(ClaimTypes.Role)?.Value;
 
-            return Ok($"Bem-vindo, {username}! Seu papel é: {role}. Você acessou um endpoint protegido");
+            try
+            {
+                var username = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var role = User.FindFirst(ClaimTypes.Role)?.Value;
+
+                return Ok($"Bem-vindo, {username}! Seu papel é: {role}. Você acessou um endpoint protegido");
+            }
+            catch (DbUpdateException ex)
+            {
+                return BadRequest(new { erro = "Erro ao acessar o banco: " + ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
+
         }
 
-        public class LoginRequest
-        {
-            public string Email { get; set; } = string.Empty;
-            public string Senha { get; set; } = string.Empty;
-        }
     }
 }

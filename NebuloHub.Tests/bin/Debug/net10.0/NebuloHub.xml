@@ -42,7 +42,7 @@
             Retorna todos os Startup.
             </summary>
         </member>
-        <member name="M:NebuloHub.Controllers.v1.AuthController.Login(NebuloHub.Controllers.v1.AuthController.LoginRequest)">
+        <member name="M:NebuloHub.Controllers.v1.AuthController.Login(NebuloHub.Application.DTOs.Request.LoginRequest)">
             <summary>
             Endpoint de login (gera o token JWT)
             </summary>
@@ -89,7 +89,7 @@
             Chama a procedure pkg_funcao2_validacao.analisar_startup e retorna o resultado do CLOB.
             </summary>
         </member>
-        <member name="M:NebuloHub.Controllers.v2.AuthController.Login(NebuloHub.Controllers.v2.AuthController.LoginRequest)">
+        <member name="M:NebuloHub.Controllers.v2.AuthController.Login(NebuloHub.Application.DTOs.Request.LoginRequest)">
             <summary>
             Endpoint de login (gera o token JWT)
             </summary>
