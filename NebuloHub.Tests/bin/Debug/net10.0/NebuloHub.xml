@@ -225,6 +225,36 @@
             </summary>
             <param name="cnpj">ID do registro</param>
         </member>
+        <member name="M:NebuloHub.Controllers.v2.UsuarioController.GetUsuario">
+            <summary>
+            Retorna todos os Usuarios.
+            </summary>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.UsuarioController.GetUsuarioById(System.String)">
+            <summary>
+            Retorna um Usuario pelo CPF.
+            </summary>
+            <param name="cpf">cpf do registro</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.UsuarioController.PostUsuario(NebuloHub.Application.DTOs.Request.CreateUsuarioRequest)">
+            <summary>
+            Cria um novo Usuario.
+            </summary>
+            <param name="request">Payload para criação</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.UsuarioController.PutUsuario(System.String,NebuloHub.Application.DTOs.Request.CreateUsuarioRequest)">
+            <summary>
+            Atualiza um Usuario existente.
+            </summary>
+            <param name="cpf">CPF do registro</param>
+            <param name="request">Payload para atualização</param>
+        </member>
+        <member name="M:NebuloHub.Controllers.v2.UsuarioController.DeleteUsuario(System.String)">
+            <summary>
+            Deleta um Usuario existente.
+            </summary>
+            <param name="cpf">ID do registro</param>
+        </member>
         <member name="T:NebuloHub.Migrations.NebuloMigration">
             <inheritdoc />
         </member>

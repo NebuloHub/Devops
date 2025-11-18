@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using NebuloHub.Application.DTOs.Request;
 using NebuloHub.Application.DTOs.Response;
@@ -32,6 +33,13 @@ namespace NebuloHub.Controllers.v2
             _logger = logger;
         }
 
+
+
+
+
+        /// <summary>
+        /// Retorna todos os Usuarios.
+        /// </summary>
         [HttpGet]
         [AllowAnonymous]
         [ProducesResponseType(typeof(IEnumerable<CreateUsuarioResponse>), (int)HttpStatusCode.OK)]
@@ -61,6 +69,15 @@ namespace NebuloHub.Controllers.v2
             });
         }
 
+
+
+
+
+
+        /// <summary>
+        /// Retorna um Usuario pelo CPF.
+        /// </summary>
+        /// <param name="cpf">cpf do registro</param>
         [HttpGet("{cpf}")]
         [AllowAnonymous]
         [ProducesResponseType(typeof(CreateUsuarioResponse), (int)HttpStatusCode.OK)]
@@ -80,24 +97,68 @@ namespace NebuloHub.Controllers.v2
             return Ok(usuario);
         }
 
+
+
+
+
+
+
+
+        /// <summary>
+        /// Cria um novo Usuario.
+        /// </summary>
+        /// <param name="request">Payload para criação</param>
         [HttpPost]
         [AllowAnonymous]
         [ProducesResponseType(typeof(CreateUsuarioResponse), (int)HttpStatusCode.Created)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> PostUsuario([FromBody] CreateUsuarioRequest request)
         {
-            _logger.LogInformation("Iniciando criação do usuário {cpf}", request.CPF);
+            try
+            {
+                _logger.LogInformation("Iniciando criação do usuário {cpf}", request.CPF);
 
-            _validationUsuario.ValidateAndThrow(request);
+                // Valida entrada
+                _validationUsuario.ValidateAndThrow(request);
 
-            var usuarioResponse = await _usuarioUseCase.CreateUsuarioAsync(request);
+                // Regra de negócio + persistência
+                var usuarioResponse = await _usuarioUseCase.CreateUsuarioAsync(request);
 
-            _logger.LogInformation("Usuário {cpf} criado com sucesso.", usuarioResponse.CPF);
+                _logger.LogInformation("Usuário {cpf} criado com sucesso.", usuarioResponse.CPF);
 
-            return CreatedAtAction(nameof(GetUsuarioById),
-                new { cpf = usuarioResponse.CPF }, usuarioResponse);
+                return CreatedAtAction(nameof(GetUsuarioById),
+                    new { cpf = usuarioResponse.CPF }, usuarioResponse);
+            }
+            catch (ValidationException ex)
+            {
+                return BadRequest(new { erro = ex.Message });
+            }
+            catch (DbUpdateException ex)
+            {
+                return BadRequest(new { erro = "Erro ao acessar o banco: " + ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado no cadastro.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
         }
 
+
+
+
+
+
+
+
+
+
+
+        /// <summary>
+        /// Atualiza um Usuario existente.
+        /// </summary>
+        /// <param name="cpf">CPF do registro</param>
+        /// <param name="request">Payload para atualização</param>
         [HttpPut("{cpf}")]
         [AllowAnonymous]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
@@ -105,36 +166,62 @@ namespace NebuloHub.Controllers.v2
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         public async Task<IActionResult> PutUsuario(string cpf, [FromBody] CreateUsuarioRequest request)
         {
-            _logger.LogInformation("Atualizando usuário {cpf}", cpf);
-
-            var updated = await _usuarioUseCase.UpdateUsuarioAsync(cpf, request);
-            if (!updated)
+            try
             {
-                _logger.LogWarning("Tentativa de atualizar usuário {cpf}, mas o registro não existe.", cpf);
-                return NotFound();
-            }
+                _logger.LogInformation("Atualizando usuário {cpf}", cpf);
 
-            _logger.LogInformation("Usuário {cpf} atualizado com sucesso.", cpf);
-            return NoContent();
+                var atualizado = await _usuarioUseCase.UpdateUsuarioAsync(cpf, request);
+
+                if (atualizado == null)
+                    return NotFound();
+
+                return Ok(atualizado);
+            }
+            catch (ValidationException ex)
+            {
+                return BadRequest(new { erro = ex.Message });
+            }
+            catch (DbUpdateException ex)
+            {
+                return BadRequest(new { erro = "Erro no banco: " + ex.InnerException?.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado ao atualizar usuário.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
         }
 
+
+
+
+
+
+
+        /// <summary>
+        /// Deleta um Usuario existente.
+        /// </summary>
+        /// <param name="cpf">ID do registro</param>
         [HttpDelete("{cpf}")]
         [Authorize(Roles = "ADMIN")]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<IActionResult> DeleteUsuario(string cpf)
         {
-            _logger.LogInformation("Deletando usuário {cpf}", cpf);
-
-            var deleted = await _usuarioUseCase.DeleteUsuarioAsync(cpf);
-            if (!deleted)
+            try
             {
-                _logger.LogWarning("Tentativa de deletar usuário {cpf}, porém não encontrado.", cpf);
-                return NotFound();
-            }
+                var deleted = await _usuarioUseCase.DeleteUsuarioAsync(cpf);
 
-            _logger.LogInformation("Usuário {cpf} deletado com sucesso.", cpf);
-            return NoContent();
+                if (!deleted)
+                    return NotFound();
+
+                return Ok(new { mensagem = "Usuário deletado com sucesso." });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Erro inesperado ao deletar usuário.");
+                return StatusCode(500, new { erro = ex.Message });
+            }
         }
     }
 }

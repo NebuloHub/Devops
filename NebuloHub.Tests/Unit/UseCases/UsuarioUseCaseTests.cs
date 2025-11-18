@@ -86,8 +86,9 @@ public class UsuarioUseCaseTests
 
         var result = await _useCase.UpdateUsuarioAsync(cpf, request);
 
-        Assert.True(result);
-        Assert.Equal("Nome Novo", usuarioExistente.Nome);
+        Assert.NotNull(result);
+        Assert.Equal("Nome Novo", result.Nome);
+
 
         _repositoryMock.Verify(r => r.GetByIdAsync(cpf), Times.Once);
         _repositoryMock.Verify(r => r.Update(It.IsAny<Usuario>()), Times.Once);
@@ -118,7 +119,7 @@ public class UsuarioUseCaseTests
 
         var result = await _useCase.UpdateUsuarioAsync(cpf, request);
 
-        Assert.False(result);
+        Assert.Null(result);
 
         _repositoryMock.Verify(r => r.Update(It.IsAny<Usuario>()), Times.Never);
         _repositoryMock.Verify(r => r.SaveChangesAsync(), Times.Never);

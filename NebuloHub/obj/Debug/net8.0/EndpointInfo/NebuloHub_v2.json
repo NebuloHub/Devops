@@ -1330,6 +1330,7 @@
         "tags": [
           "CRUD Usuario"
         ],
+        "summary": "Retorna todos os Usuarios.",
         "responses": {
           "200": {
             "description": "OK",
@@ -1366,7 +1367,9 @@
         "tags": [
           "CRUD Usuario"
         ],
+        "summary": "Cria um novo Usuario.",
         "requestBody": {
+          "description": "Payload para criação",
           "content": {
             "application/json": {
               "schema": {
@@ -1434,10 +1437,12 @@
         "tags": [
           "CRUD Usuario"
         ],
+        "summary": "Retorna um Usuario pelo CPF.",
         "parameters": [
           {
             "name": "cpf",
             "in": "path",
+            "description": "cpf do registro",
             "required": true,
             "schema": {
               "type": "string"
@@ -1491,10 +1496,12 @@
         "tags": [
           "CRUD Usuario"
         ],
+        "summary": "Atualiza um Usuario existente.",
         "parameters": [
           {
             "name": "cpf",
             "in": "path",
+            "description": "CPF do registro",
             "required": true,
             "schema": {
               "type": "string"
@@ -1502,6 +1509,7 @@
           }
         ],
         "requestBody": {
+          "description": "Payload para atualização",
           "content": {
             "application/json": {
               "schema": {
@@ -1570,10 +1578,12 @@
         "tags": [
           "CRUD Usuario"
         ],
+        "summary": "Deleta um Usuario existente.",
         "parameters": [
           {
             "name": "cpf",
             "in": "path",
+            "description": "ID do registro",
             "required": true,
             "schema": {
               "type": "string"

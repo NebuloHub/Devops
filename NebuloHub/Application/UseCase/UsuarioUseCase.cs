@@ -90,10 +90,10 @@ namespace NebuloHub.Application.UseCase
         }
 
 
-        public async Task<bool> UpdateUsuarioAsync(string cpf, CreateUsuarioRequest request)
+        public async Task<CreateUsuarioResponse> UpdateUsuarioAsync(string cpf, CreateUsuarioRequest request)
         {
             var usuario = await _repository.GetByIdAsync(cpf);
-            if (usuario == null) return false;
+            if (usuario == null) return null;
 
             usuario.Atualizar(
                 request.Nome,
@@ -104,7 +104,17 @@ namespace NebuloHub.Application.UseCase
             );
             _repository.Update(usuario);
             await _repository.SaveChangesAsync();
-            return true;
+
+
+            return new CreateUsuarioResponse
+            {
+                CPF = usuario.CPF,
+                Nome = usuario.Nome,
+                Email = usuario.Email,
+                Senha = usuario.Senha,
+                Role = usuario.Role,
+                Telefone = usuario.Telefone
+            };
         }
 
         public async Task<bool> DeleteUsuarioAsync(string cpf)
