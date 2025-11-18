@@ -14,7 +14,7 @@ namespace NebuloHub.Services
             this.configuration = configuration;
         }
 
-        public string GenerateToken(string username, string role)
+        public string GenerateToken(string cpf, string username, string role)
         {
             var key = configuration["Jwt:Key"];
             var issuer = configuration["Jwt:Issuer"];
@@ -25,6 +25,7 @@ namespace NebuloHub.Services
 
             var claims = new[]
             {
+                new Claim("cpf", cpf),
                 new Claim(JwtRegisteredClaimNames.Sub, username),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.Role, role)

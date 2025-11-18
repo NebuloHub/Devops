@@ -32,7 +32,7 @@ namespace NebuloHub.Controllers.v1
             if (usuario == null)
                 return Unauthorized("Usuário ou senha inválidos");
 
-            var token = _tokenService.GenerateToken(usuario.Email, usuario.Role.ToString());
+            var token = _tokenService.GenerateToken(usuario.CPF, usuario.Email, usuario.Role.ToString());
 
             return Ok(new
             {
