@@ -35,7 +35,9 @@ namespace NebuloHub.Application.UseCase
             {
                 IdAvaliacao = avaliacao.IdAvaliacao,
                 Nota = avaliacao.Nota,
-                Comentario = avaliacao.Comentario
+                Comentario = avaliacao.Comentario,
+                UsuarioCPF = avaliacao.UsuarioCPF,
+                StartupCNPJ = avaliacao.StartupCNPJ
             };
         }
 

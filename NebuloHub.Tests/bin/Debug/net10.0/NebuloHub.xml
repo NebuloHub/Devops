@@ -86,7 +86,7 @@
         </member>
         <member name="M:NebuloHub.Controllers.v2.AnaliseStartupController.AnalisarStartup(NebuloHub.Application.DTOs.Request.AnalisarStartupRequest)">
             <summary>
-            Chama a procedure pkg_funcao2_validacao.analisar_startup e retorna o resultado do CLOB.
+            Chama a procedure pkg_funcao2_validacao.analisar_startup e retorna o resultado.
             </summary>
         </member>
         <member name="M:NebuloHub.Controllers.v2.AuthController.Login(NebuloHub.Application.DTOs.Request.LoginRequest)">

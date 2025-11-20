@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub.Tests\\NebuloHub.Tests.csproj": {}
+    "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub.Tests\\NebuloHub.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub.Tests\\NebuloHub.Tests.csproj": {
+    "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub.Tests\\NebuloHub.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub.Tests\\NebuloHub.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub.Tests\\NebuloHub.Tests.csproj",
         "projectName": "NebuloHub.Tests",
-        "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub.Tests\\NebuloHub.Tests.csproj",
+        "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub.Tests\\NebuloHub.Tests.csproj",
         "packagesPath": "C:\\Users\\Passos Magicos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj": {
-                "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj"
+              "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj": {
+                "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj"
               }
             }
           }
@@ -375,14 +375,14 @@
         }
       }
     },
-    "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj": {
+    "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+        "projectUniqueName": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
         "projectName": "NebuloHub",
-        "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+        "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
         "packagesPath": "C:\\Users\\Passos Magicos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\obj\\",
+        "outputPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

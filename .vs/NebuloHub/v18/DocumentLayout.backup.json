@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|c:\\users\\passos magicos\\downloads\\.net\\nebulohub\\application\\usecase\\avaliacaousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BC0FA02-245D-4100-B843-65DA512993F9}|NebuloHub\\NebuloHub.csproj|solutionrelative:nebulohub\\application\\usecase\\avaliacaousecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 360,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AvaliacaoUseCase.cs",
+              "DocumentMoniker": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\Application\\UseCase\\AvaliacaoUseCase.cs",
+              "RelativeDocumentMoniker": "NebuloHub\\Application\\UseCase\\AvaliacaoUseCase.cs",
+              "ToolTip": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\Application\\UseCase\\AvaliacaoUseCase.cs",
+              "RelativeToolTip": "NebuloHub\\Application\\UseCase\\AvaliacaoUseCase.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wCcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T04:36:11.623Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

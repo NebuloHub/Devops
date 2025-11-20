@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PIVVekAx0g0=",
+  "dgSpecHash": "5Ts4iCLxazg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+  "projectFilePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Passos Magicos\\.nuget\\packages\\aspnetcore.healthchecks.oracle\\9.0.0\\aspnetcore.healthchecks.oracle.9.0.0.nupkg.sha512",
     "C:\\Users\\Passos Magicos\\.nuget\\packages\\aspnetcore.healthchecks.ui\\9.0.0\\aspnetcore.healthchecks.ui.9.0.0.nupkg.sha512",
@@ -264,9 +264,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requer AutoMapper (= 12.0.1), mas a versão AutoMapper 15.1.0 foi resolvida.",
-      "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "filePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net8.0"
@@ -276,9 +276,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.CSharp.Workspaces 4.8.0 requer Microsoft.CodeAnalysis.Common (= 4.8.0), mas a versão Microsoft.CodeAnalysis.Common 4.9.2 foi resolvida.",
-      "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "filePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -288,9 +288,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.CSharp.Workspaces 4.8.0 requer Microsoft.CodeAnalysis.CSharp (= 4.8.0), mas a versão Microsoft.CodeAnalysis.CSharp 4.9.2 foi resolvida.",
-      "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "filePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "libraryId": "Microsoft.CodeAnalysis.CSharp",
       "targetGraphs": [
         "net8.0"
@@ -300,9 +300,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.CSharp.Features 4.8.0 requer Microsoft.CodeAnalysis.Common (= 4.8.0), mas a versão Microsoft.CodeAnalysis.Common 4.9.2 foi resolvida.",
-      "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "filePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -312,9 +312,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.CSharp.Features 4.8.0 requer Microsoft.CodeAnalysis.CSharp (= 4.8.0), mas a versão Microsoft.CodeAnalysis.CSharp 4.9.2 foi resolvida.",
-      "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "filePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "libraryId": "Microsoft.CodeAnalysis.CSharp",
       "targetGraphs": [
         "net8.0"
@@ -324,9 +324,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.Workspaces.Common 4.8.0 requer Microsoft.CodeAnalysis.Common (= 4.8.0), mas a versão Microsoft.CodeAnalysis.Common 4.9.2 foi resolvida.",
-      "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "filePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -336,9 +336,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.Features 4.8.0 requer Microsoft.CodeAnalysis.Common (= 4.8.0), mas a versão Microsoft.CodeAnalysis.Common 4.9.2 foi resolvida.",
-      "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "filePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -348,9 +348,9 @@
       "code": "NU1608",
       "level": "Warning",
       "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.Scripting.Common 4.8.0 requer Microsoft.CodeAnalysis.Common (= 4.8.0), mas a versão Microsoft.CodeAnalysis.Common 4.9.2 foi resolvida.",
-      "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "filePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -360,9 +360,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "O pacote 'Oracle.ManagedDataAccess 23.7.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net8.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "projectPath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "projectPath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Passos Magicos\\Documents\\Luiz\\.NET\\NebuloHub\\NebuloHub.csproj",
+      "filePath": "C:\\Users\\Passos Magicos\\Downloads\\.NET\\NebuloHub\\NebuloHub.csproj",
       "libraryId": "Oracle.ManagedDataAccess",
       "targetGraphs": [
         "net8.0"
