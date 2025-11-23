@@ -8,19 +8,19 @@ echo "======================================================"
 ### ==========================================
 ### Variáveis
 ### ==========================================
-RG="rg-nebulohub"
-LOCATION="eastus2"
+RG="${RESOURCEGROUP}"
+LOCATION="${LOCATION}"
 
 # SQL Server
-SQL_SERVER="sqlserver-nebulohub"
-DBNAME="nebuluhubdb"
-DB_USER="adminsql"
-DB_PASSWORD="SuaSenhaForte123!"
+SQL_SERVER="${SQLSERVER}"
+DBNAME="${DBNAME}"
+DB_USER="${DBUSER}"
+DB_PASSWORD="${DBPASSWORD}"
 
 # App Service
-APP_PLAN="planNebulohub"
-APP_NAME="webapp-nebulohub"
-RUNTIME="DOTNETCORE:8.0"
+APP_PLAN="${APPPLAN}"
+APP_NAME="${APPNAME}"
+RUNTIME="${RUNTIME}"
 
 ### ==========================================
 ### Grupo de Recursos
