@@ -1,4 +1,4 @@
-﻿using HealthChecks.UI.Client;
+using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Mvc;
@@ -20,8 +20,15 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
 using System.Text;
 using System.Text.Json.Serialization;
+using HealthChecks.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080);
+});
+
 
 // ===============================
 // CONFIGURAÇÕES DE JWT
@@ -34,7 +41,7 @@ var jwtAudience = builder.Configuration["Jwt:Audience"];
 // BANCO DE DADOS
 // ===============================
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseOracle(builder.Configuration.GetConnectionString("OracleNebuloHub")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 
 // ===============================
 // CONTROLLERS + JSON
@@ -137,15 +144,19 @@ builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwa
 // ===============================
 // HEALTH CHECKS
 // ===============================
+
+var healthUrl = builder.Configuration["HEALTHCHECK)URL"] ?? "/health";
 builder.Services.AddHealthChecks()
-    .AddOracle(builder.Configuration.GetConnectionString("OracleNebuloHub"), name: "oracle");
+    .AddSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), name: "sqlserver");
 
 builder.Services.AddHealthChecksUI(opt =>
 {
     opt.SetEvaluationTimeInSeconds(10);
     opt.MaximumHistoryEntriesPerEndpoint(60);
-    opt.AddHealthCheckEndpoint("API Health", "/health");
-}).AddInMemoryStorage();
+    opt.AddHealthCheckEndpoint("API Health", healthUrl);
+})
+.AddInMemoryStorage();
+
 
 // ===============================
 // JWT AUTHENTICATION
@@ -201,7 +212,7 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
