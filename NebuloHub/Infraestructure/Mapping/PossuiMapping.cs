@@ -17,7 +17,6 @@ namespace NebuloHub.Infraestructure.Mapping
             builder
                 .Property(p => p.IdPossui)
                 .HasColumnName("ID_POSSUI")
-                .HasDefaultValueSql("POSSUI_SEQ.NEXTVAL")
                 .IsRequired();
 
             builder

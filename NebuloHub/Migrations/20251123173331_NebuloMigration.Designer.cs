@@ -2,17 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NebuloHub.Infraestructure.Context;
-using Oracle.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
 namespace NebuloHub.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251113225820_NebuloMigration")]
+    [Migration("20251123173331_NebuloMigration")]
     partial class NebuloMigration
     {
         /// <inheritdoc />
@@ -23,37 +23,43 @@ namespace NebuloHub.Migrations
                 .HasAnnotation("ProductVersion", "8.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            OracleModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("NebuloHub.Domain.Entity.Avaliacao", b =>
                 {
                     b.Property<long>("IdAvaliacao")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(19)")
-                        .HasColumnName("ID_AVALIACAO")
-                        .HasDefaultValueSql("AVALIACAO_SEQ.NEXTVAL");
+                        .HasColumnType("bigint")
+                        .HasColumnName("ID_AVALIACAO");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("IdAvaliacao"));
 
                     b.Property<string>("Comentario")
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("COMENTARIO");
 
                     b.Property<long>("Nota")
-                        .HasColumnType("NUMBER(19)")
+                        .HasColumnType("bigint")
                         .HasColumnName("NOTA");
 
                     b.Property<string>("StartupCNPJ")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(450)")
+                        .HasColumnType("nvarchar(450)")
                         .HasColumnName("CNPJ");
+
+                    b.Property<string>("StartupCNPJ1")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("UsuarioCPF")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(450)")
+                        .HasColumnType("nvarchar(450)")
                         .HasColumnName("CPF");
 
                     b.HasKey("IdAvaliacao");
 
                     b.HasIndex("StartupCNPJ");
+
+                    b.HasIndex("StartupCNPJ1");
 
                     b.HasIndex("UsuarioCPF");
 
@@ -64,18 +70,19 @@ namespace NebuloHub.Migrations
                 {
                     b.Property<long>("IdHabilidade")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(19)")
-                        .HasColumnName("ID_HABILIDADE")
-                        .HasDefaultValueSql("HABILIDADE_SEQ.NEXTVAL");
+                        .HasColumnType("bigint")
+                        .HasColumnName("ID_HABILIDADE");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("IdHabilidade"));
 
                     b.Property<string>("NomeHabilidade")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("NOME_HABILIDADE");
 
                     b.Property<string>("TipoHabilidade")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("TIPO_HABILIDADE");
 
                     b.HasKey("IdHabilidade");
@@ -87,17 +94,18 @@ namespace NebuloHub.Migrations
                 {
                     b.Property<long>("IdPossui")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("NUMBER(19)")
-                        .HasColumnName("ID_POSSUI")
-                        .HasDefaultValueSql("POSSUI_SEQ.NEXTVAL");
+                        .HasColumnType("bigint")
+                        .HasColumnName("ID_POSSUI");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("IdPossui"));
 
                     b.Property<long>("IdHabilidade")
-                        .HasColumnType("NUMBER(19)")
+                        .HasColumnType("bigint")
                         .HasColumnName("ID_HABILIDADE");
 
                     b.Property<string>("StartupCNPJ")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(450)")
+                        .HasColumnType("nvarchar(450)")
                         .HasColumnName("CNPJ");
 
                     b.HasKey("IdPossui");
@@ -112,39 +120,39 @@ namespace NebuloHub.Migrations
             modelBuilder.Entity("NebuloHub.Domain.Entity.Startup", b =>
                 {
                     b.Property<string>("CNPJ")
-                        .HasColumnType("NVARCHAR2(450)")
+                        .HasColumnType("nvarchar(450)")
                         .HasColumnName("CNPJ");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("DESCRICAO");
 
                     b.Property<string>("EmailStartup")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("EMAIL_STARTUP");
 
                     b.Property<string>("NomeResponsavel")
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("NOME_RESPONSAVEL");
 
                     b.Property<string>("NomeStartup")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("NOME_STARTUP");
 
                     b.Property<string>("Site")
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("SITE");
 
                     b.Property<string>("UsuarioCPF")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(450)")
+                        .HasColumnType("nvarchar(450)")
                         .HasColumnName("CPF");
 
                     b.Property<string>("Video")
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("VIDEO");
 
                     b.HasKey("CNPJ");
@@ -157,31 +165,31 @@ namespace NebuloHub.Migrations
             modelBuilder.Entity("NebuloHub.Domain.Entity.Usuario", b =>
                 {
                     b.Property<string>("CPF")
-                        .HasColumnType("NVARCHAR2(450)")
+                        .HasColumnType("nvarchar(450)")
                         .HasColumnName("CPF");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("EMAIL");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("NOME");
 
                     b.Property<string>("Role")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("ROLE");
 
                     b.Property<string>("Senha")
                         .IsRequired()
-                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("SENHA");
 
                     b.Property<long?>("Telefone")
-                        .HasColumnType("NUMBER(19)")
+                        .HasColumnType("bigint")
                         .HasColumnName("TELEFONE");
 
                     b.HasKey("CPF");
@@ -194,13 +202,17 @@ namespace NebuloHub.Migrations
                     b.HasOne("NebuloHub.Domain.Entity.Startup", "Startup")
                         .WithMany()
                         .HasForeignKey("StartupCNPJ")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("NebuloHub.Domain.Entity.Usuario", "Usuario")
+                    b.HasOne("NebuloHub.Domain.Entity.Startup", null)
                         .WithMany("Avaliacoes")
+                        .HasForeignKey("StartupCNPJ1");
+
+                    b.HasOne("NebuloHub.Domain.Entity.Usuario", "Usuario")
+                        .WithMany()
                         .HasForeignKey("UsuarioCPF")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Startup");
@@ -247,13 +259,13 @@ namespace NebuloHub.Migrations
 
             modelBuilder.Entity("NebuloHub.Domain.Entity.Startup", b =>
                 {
+                    b.Navigation("Avaliacoes");
+
                     b.Navigation("Possuis");
                 });
 
             modelBuilder.Entity("NebuloHub.Domain.Entity.Usuario", b =>
                 {
-                    b.Navigation("Avaliacoes");
-
                     b.Navigation("Startups");
                 });
 #pragma warning restore 612, 618

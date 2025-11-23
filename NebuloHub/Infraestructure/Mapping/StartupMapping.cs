@@ -51,6 +51,12 @@ namespace NebuloHub.Infraestructure.Mapping
                 .HasColumnName("CPF")
                 .IsRequired();
 
+            builder
+                .HasMany(s => s.Avaliacoes)
+                .WithOne(a => a.Startup)
+                .HasForeignKey(a => a.StartupCNPJ);
+
+
         }
     }
 }

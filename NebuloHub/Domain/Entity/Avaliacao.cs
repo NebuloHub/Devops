@@ -14,6 +14,7 @@ namespace NebuloHub.Domain.Entity
 
         // Chave estrangeira
         public string UsuarioCPF { get; set; }
+        [ForeignKey("UsuarioCPF")]
         public virtual Usuario Usuario { get; set; }
 
         public string StartupCNPJ { get; set; }

@@ -14,9 +14,10 @@ namespace NebuloHub.Migrations
                 name: "HABILIDADE",
                 columns: table => new
                 {
-                    ID_HABILIDADE = table.Column<long>(type: "NUMBER(19)", nullable: false, defaultValueSql: "HABILIDADE_SEQ.NEXTVAL"),
-                    NOME_HABILIDADE = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
-                    TIPO_HABILIDADE = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false)
+                    ID_HABILIDADE = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NOME_HABILIDADE = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TIPO_HABILIDADE = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -27,12 +28,12 @@ namespace NebuloHub.Migrations
                 name: "USUARIO",
                 columns: table => new
                 {
-                    CPF = table.Column<string>(type: "NVARCHAR2(450)", nullable: false),
-                    NOME = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
-                    EMAIL = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
-                    SENHA = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
-                    ROLE = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
-                    TELEFONE = table.Column<long>(type: "NUMBER(19)", nullable: true)
+                    CPF = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    NOME = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EMAIL = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SENHA = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ROLE = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TELEFONE = table.Column<long>(type: "bigint", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -43,14 +44,14 @@ namespace NebuloHub.Migrations
                 name: "STARTUP",
                 columns: table => new
                 {
-                    CNPJ = table.Column<string>(type: "NVARCHAR2(450)", nullable: false),
-                    VIDEO = table.Column<string>(type: "NVARCHAR2(2000)", nullable: true),
-                    NOME_STARTUP = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
-                    SITE = table.Column<string>(type: "NVARCHAR2(2000)", nullable: true),
-                    DESCRICAO = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
-                    NOME_RESPONSAVEL = table.Column<string>(type: "NVARCHAR2(2000)", nullable: true),
-                    EMAIL_STARTUP = table.Column<string>(type: "NVARCHAR2(2000)", nullable: false),
-                    CPF = table.Column<string>(type: "NVARCHAR2(450)", nullable: false)
+                    CNPJ = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    VIDEO = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NOME_STARTUP = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SITE = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DESCRICAO = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NOME_RESPONSAVEL = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EMAIL_STARTUP = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CPF = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -67,11 +68,13 @@ namespace NebuloHub.Migrations
                 name: "AVALIACAO",
                 columns: table => new
                 {
-                    ID_AVALIACAO = table.Column<long>(type: "NUMBER(19)", nullable: false, defaultValueSql: "AVALIACAO_SEQ.NEXTVAL"),
-                    NOTA = table.Column<long>(type: "NUMBER(19)", nullable: false),
-                    COMENTARIO = table.Column<string>(type: "NVARCHAR2(2000)", nullable: true),
-                    CPF = table.Column<string>(type: "NVARCHAR2(450)", nullable: false),
-                    CNPJ = table.Column<string>(type: "NVARCHAR2(450)", nullable: false)
+                    ID_AVALIACAO = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NOTA = table.Column<long>(type: "bigint", nullable: false),
+                    COMENTARIO = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CPF = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    CNPJ = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    StartupCNPJ1 = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -81,22 +84,28 @@ namespace NebuloHub.Migrations
                         column: x => x.CNPJ,
                         principalTable: "STARTUP",
                         principalColumn: "CNPJ",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_AVALIACAO_STARTUP_StartupCNPJ1",
+                        column: x => x.StartupCNPJ1,
+                        principalTable: "STARTUP",
+                        principalColumn: "CNPJ");
                     table.ForeignKey(
                         name: "FK_AVALIACAO_USUARIO_CPF",
                         column: x => x.CPF,
                         principalTable: "USUARIO",
                         principalColumn: "CPF",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
                 name: "POSSUI",
                 columns: table => new
                 {
-                    ID_POSSUI = table.Column<long>(type: "NUMBER(19)", nullable: false, defaultValueSql: "POSSUI_SEQ.NEXTVAL"),
-                    CNPJ = table.Column<string>(type: "NVARCHAR2(450)", nullable: false),
-                    ID_HABILIDADE = table.Column<long>(type: "NUMBER(19)", nullable: false)
+                    ID_POSSUI = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CNPJ = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ID_HABILIDADE = table.Column<long>(type: "bigint", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -124,6 +133,11 @@ namespace NebuloHub.Migrations
                 name: "IX_AVALIACAO_CPF",
                 table: "AVALIACAO",
                 column: "CPF");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_AVALIACAO_StartupCNPJ1",
+                table: "AVALIACAO",
+                column: "StartupCNPJ1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_POSSUI_CNPJ",

@@ -267,5 +267,17 @@
         <member name="M:NebuloHub.Migrations.NebuloMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:NebuloHub.Migrations.AjusteAvaliacaoStartup">
+            <inheritdoc />
+        </member>
+        <member name="M:NebuloHub.Migrations.AjusteAvaliacaoStartup.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NebuloHub.Migrations.AjusteAvaliacaoStartup.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NebuloHub.Migrations.AjusteAvaliacaoStartup.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>
