@@ -1,20 +1,39 @@
-<div align="center">
-  
-# Entrega de Advanced Business Development with .NET
+# NebuloHub
 
+### NebuloHub = O hub onde novas ideias nascem
 
-</div>
+Nebulo vem de “Nebulosa” — estruturas cósmicas que simbolizam nascimento, criação e potencial explosivo.
+É uma metáfora perfeita para startups, que também nascem pequenas e podem se tornar gigantes.
+
+Hub representa conexão, comunidade e ponto central de encontro.
+
+NebuloHub é uma plataforma inteligente dedicada à descoberta, avaliação e conexão de startups.
+Ao se cadastrar, cada startup seleciona suas habilidades e características principais, formando um perfil único dentro do ecossistema.
+
+Com base em avaliações públicas e no desempenho de startups semelhantes, o NebuloHub utiliza Inteligência Artificial para estimar o potencial de sucesso de cada negócio. Usuários comuns podem criar contas, acessar um feed interativo, visualizar startups, deixar avaliações em estrelas e registrar comentários, contribuindo para a formação de uma comunidade ativa e colaborativa.
+
+Assim como estrelas surgem dentro de nebulosas, o NebuloHub funciona como um ambiente onde novas ideias ganham forma, visibilidade e direção — guiadas por dados, tecnologia e avaliação coletiva.
+
 
 ---
 
-Neste repositório está presente o desenvolvimento da entrega da Global Solution de 2025 da matéria **Advanced Business Development with .NET** da faculdade FIAP, com o projeto se chamando **NebuloHub**.
+Este projeto é a solução desenvolvida para o Global Solution de "Devops" da FIAP. usando .NET 
 
-### Membros do grupo:
-- Erick Alves - <a href="https://github.com/Erick0105">Erick0105</a> - Rm 5568682
-- Vicenzo Oliveira - <a href="https://github.com/fFukurou">fFukurou</a> - Rm 554833
-- Luiz Henrique - <a href="https://github.com/LuizHNR">LuizHNR</a> - Rm 556864
+**Integrantes:**
+* Vicenzo Massao - 554833 - 2TDSPM
+* Erick Alves - 556862 - 2TDSPM
+* Luiz Heimberg - 556864 - 2TDSPX
+
+**Link do Repositório GitHub:**
+
+
+**Link do Vídeo da Apresentação:**
+[Link do Video de Devops]()
+
 
 ---
+
+
 # 🤖 API RESTful
 
 Este é um projeto de uma API RESTful desenvolvida em **ASP.NET Core**, armazena os dados que serão necessario para o projeto, como as startups e usuarios.
@@ -64,104 +83,3 @@ Essa abordagem permite **maior testabilidade**, **baixo acoplamento** e facilita
 - **FluentValidation.AspNetCore** — Validação de dados  
 - **Swagger (Swashbuckle.AspNetCore + Filters + Annotations)** — Documentação da API  
 - **AutoMapper** — Mapeamento entre entidades e DTOs  
-
-
----
-
-## 🚀 Como Executar o Projeto
-
-### ✅ Pré-requisitos
-
-- .NET SDK 8.0 ou superior
-- Banco de dados Oracle instalado ou acesso a instância remota
-- Ferramenta como DBeaver, Oracle SQL Developer, etc. para gerenciar o Oracle
-- Git
-- Editor de código (Visual Studio ou VS Code)
-
----
-
-### 📦 Clonar o projeto
-
-```bash
-git clone https://github.com/NebuloHub/.NET.git
-cd NebuloHub.NET
-```
-
----
-
-### Entrar no visual studio e selecionar o projeto
-
-- Apertar run para executar o projeto
- ```bash
-    http://localhost:5100/swagger
-```
-
-
-- Selecionar a versão que você deseja testar, a versão 2 possui todos os Cruds de todas as Entidades
-  <img width="1351" height="104" alt="image" src="https://github.com/user-attachments/assets/cbb2183b-0b96-4b75-b852-d4fe9ef98aa7" />
-
-
-- O projeto possui nivel de acessos então para algumas coisas você precisa ter autorização de Admin
-
-- Selecione o post do crud de Auth
-  <img width="1325" height="153" alt="image" src="https://github.com/user-attachments/assets/7337adb0-0ebc-4422-b78b-ffb19b2ab914" />
-  
-   ```bash
-   {
-    "email": "luizhneri12@gmail.com",
-    "senha": "Carrinhos@1234"
-  }
-  ```
-
-- A resposta sera um token você copia ele e cola para se cadastrar no swagger
-  <img width="1353" height="646" alt="image" src="https://github.com/user-attachments/assets/05861d22-9813-4e75-90d6-9b4db58a66d4" />
-
-- Após isso você pode utilizar qualquer Crud de forma livre
-
-- Para utilizar o Health Check você pode rodar a API e colocar na aba de pesquisa:
- ```bash
-    http://localhost:5100/health-ui
-```
-
- ```bash
-    http://localhost:5100/health
-```
-
-- Ou, 5000 para produção 
- ```bash
-    http://localhost:5000/health
-```
-
- ```bash
-    http://localhost:5000/health-ui
-```
-
-
-- Foi utilizado somente testes unitarios, para rodar voce pode ir no terminal
-
-```bash
-    dotnet test
-```
-
-- Ou pelo gerenciador de testes
-
-<img width="1059" height="700" alt="image" src="https://github.com/user-attachments/assets/c903e400-5c72-47d4-9574-b2c290fbd96f" />
-
----
-
-Caminho para o dll e .exe
-
-```bash
-    \.NET\NebuloHub\bin\Debug\net8.0\NebuloHub.dll
-```
-
-```bash
-    \.NET\NebuloHub\bin\Debug\net8.0\NebuloHub.exe
-```
-
----
-
-### Nosso Professor:
-
-###### Thiago Keller Torquato Vicco	
-
